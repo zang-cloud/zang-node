@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "subresource_uris": {
+    "participants": "/v2/Accounts/TestAccountSid/Conferences/TestConferenceSid/Participants"
+  },
+  "sid": "TestConferenceSid",
+  "date_updated": "Fri, 17 Mar 2017 14:03:21 -0000",
+  "date_created": "Fri, 17 Mar 2017 14:03:08 -0000",
+  "active_participants_count": 0,
+  "friendly_name": "TestConference",
+  "uri": "/v2/Accounts/TestAccountSid/Conferences/TestConferenceSid",
+  "account_sid": "TestAccountSid"
+}

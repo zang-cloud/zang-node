@@ -1,0 +1,19 @@
+{
+  "log": 0,
+  "response_headers": "",
+  "request_method": "POST",
+  "date_updated": "Fri, 24 Mar 2017 14:01:53 -0000",
+  "message_text": "ErrorCode=21227&Msg=SID+Could+not+be+found&LogLevel=%280%2C+%27ERROR%27%29&ObjectType=%28DoesNotExist%28%27CredentialList",
+  "request_variables": "CredentialListSid=SC8f8890847d6fb2c5716945a0af2ca148",
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Notifications/NO42889084d1ec1bddec4541a9975a52ba",
+  "account_sid": "ACe1889084056167d57a944486a50ceb46",
+  "message_date": "Fri, 24 Mar 2017 14:01:53 -0000",
+  "response_body": "",
+  "call_sid": null,
+  "sid": "NO42889084d1ec1bddec4541a9975a52ba",
+  "date_created": "Fri, 24 Mar 2017 14:01:53 -0000",
+  "request_url": "http://inflight.prd.telapi.net:81/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD42889084a0c23b31cff24205b55aed06/CredentialListMappings.json",
+  "error_code": 21227,
+  "api_version": "v2",
+  "more_info": "http://telapi.com/docs/api/rest/overview/errors/21227"
+}

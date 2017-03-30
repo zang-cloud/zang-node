@@ -1,0 +1,41 @@
+{
+  "first_page_uri": "/v2/Accounts/TestAccountSid/Conferences.json?Page=0&amp;PageSize=50",
+  "conferences": [
+    {
+      "status": "completed",
+      "subresource_uris": {
+        "participants": "/v2/Accounts/TestAccountSid/Conferences/TestConferenceSid/Participants"
+      },
+      "sid": "TestConferenceSid",
+      "date_updated": "Fri, 17 Mar 2017 14:03:21 -0000",
+      "date_created": "Fri, 17 Mar 2017 14:03:08 -0000",
+      "active_participants_count": 0,
+      "friendly_name": "TestConference",
+      "uri": "/v2/Accounts/TestAccountSid/Conferences/TestConferenceSid",
+      "account_sid": "TestAccountSid"
+    },
+    {
+      "status": "completed",
+      "subresource_uris": {
+        "participants": "/v2/Accounts/TestAccountSid/Conferences/TestConferenceSid2/Participants"
+      },
+      "sid": "TestConferenceSid2",
+      "date_updated": "Fri, 17 Mar 2017 13:56:38 -0000",
+      "date_created": "Fri, 17 Mar 2017 13:56:16 -0000",
+      "active_participants_count": 0,
+      "friendly_name": "TestConference",
+      "uri": "/v2/Accounts/TestAccountSid/Conferences/TestConferenceSid2",
+      "account_sid": "TestAccountSid"
+    }
+  ],
+  "end": 1,
+  "total": 2,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/TestAccountSid/Conferences.json",
+  "page_size": 50,
+  "start": 0,
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/TestAccountSid/Conferences.json?Page=0&PageSize=50",
+  "page": 0
+}

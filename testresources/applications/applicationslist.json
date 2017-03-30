@@ -1,0 +1,40 @@
+{
+  "first_page_uri": "/v2/Accounts/TestAccountSid/Applications.json?Page=0&amp;PageSize=50",
+  "applications": [
+    {
+      "date_updated": "Fri, 17 Mar 2017 15:20:02 -0000",
+      "voice_url": "http://telapi.com/ivr/welcome/call",
+      "voice_fallback_method": "POST",
+      "client_count": 0,
+      "sid": "TestApplicationSid",
+      "heartbeat_method": "POST",
+      "status_callback_method": "POST",
+      "voice_fallback_url": "",
+      "hangup_callback": "",
+      "hangup_callback_method": "POST",
+      "heartbeat_url": "",
+      "sms_url": "http://telapi.com/ivr/welcome/sms",
+      "voice_method": "POST",
+      "voice_caller_id_lookup": false,
+      "friendly_name": "TestApplication",
+      "uri": "/v2/Accounts/TestAccountSid/Applications/TestApplicationSid",
+      "sms_fallback_url": "",
+      "account_sid": "TestAccountSid",
+      "sms_method": "POST",
+      "api_version": "v2",
+      "sms_fallback_method": "POST",
+      "date_created": "Fri, 17 Mar 2017 15:20:02 -0000",
+      "status_callback": ""
+    }
+  ],
+  "end": 0,
+  "total": 1,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/TestAccountSid/Applications.json",
+  "page_size": 50,
+  "start": 0,
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/TestAccountSid/Applications.json?Page=0&PageSize=50",
+  "page": 0
+}

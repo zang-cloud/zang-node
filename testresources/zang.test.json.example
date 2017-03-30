@@ -1,0 +1,6 @@
+{
+  "phone1": "RECEIVINGPHONENUMBER",
+  "phone2":"SENDINGPHONENUMBER",
+  "mp3url":"URLTOANMP3",
+  "inboundxmlurl":"URLTOINBOUNDXML"
+}

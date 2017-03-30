@@ -1,0 +1,73 @@
+{
+  "first_page_uri": "/v2/Accounts/TestAccountSid/Fraud.json?Page=0&amp;PageSize=50",
+  "frauds": [
+    {
+      "authorized": {
+        "date_updated": "Thu, 23 Mar 2017 14:21:19 -0000",
+        "sms_enabled": true,
+        "country_code": "HR",
+        "is_lock": false,
+        "expiration_date": "Sat, 22 Apr 2017 14:21:19 -0000",
+        "mobile_enabled": false,
+        "landline_enabled": true,
+        "sid": "TestFraudControlRuleSid",
+        "country_name": "Croatia",
+        "date_created": "Thu, 23 Mar 2017 14:20:18 -0000",
+        "country_prefix": "+385"
+      }
+    },
+    {
+      "whitelisted": {
+        "is_lock": false,
+        "mobile_enabled": false,
+        "landline_enabled": true,
+        "date_updated": "Thu, 23 Mar 2017 14:55:44 -0000",
+        "country_code": "DE",
+        "sid": "TestFraudControlRuleSid2",
+        "country_name": "Germany",
+        "date_created": "Thu, 23 Mar 2017 14:22:59 -0000",
+        "sms_enabled": true,
+        "country_prefix": "+49"
+      }
+    },
+    {
+      "blocked": {
+        "is_lock": false,
+        "mobile_enabled": false,
+        "landline_enabled": true,
+        "date_updated": "Thu, 23 Mar 2017 14:23:12 -0000",
+        "country_code": "HR",
+        "sid": "TestFraudControlRuleSid3",
+        "country_name": "Croatia",
+        "date_created": "Thu, 23 Mar 2017 14:23:12 -0000",
+        "sms_enabled": true,
+        "country_prefix": "+385"
+      }
+    },
+    {
+      "authorized": {
+        "date_updated": "Thu, 23 Mar 2017 14:57:36 -0000",
+        "sms_enabled": true,
+        "country_code": "FR",
+        "is_lock": false,
+        "expiration_date": "Sat, 22 Apr 2017 14:57:36 -0000",
+        "mobile_enabled": false,
+        "landline_enabled": true,
+        "sid": "TestFraudControlRuleSid4",
+        "country_name": "France",
+        "date_created": "Thu, 23 Mar 2017 14:56:43 -0000",
+        "country_prefix": "+33"
+      }
+    }
+  ],
+  "end": 3,
+  "total": 4,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/TestAccountSid/Fraud.json",
+  "page_size": 50,
+  "start": 0,
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/TestAccountSid/Fraud.json?Page=0&PageSize=50",
+  "page": 0
+}

@@ -1,0 +1,27 @@
+{
+  "first_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists.json?Page=0&amp;PageSize=100",
+  "end": 0,
+  "total": 1,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists.json",
+  "page_size": 100,
+  "start": 0,
+  "ip_access_control": [
+    {
+      "ip_addresses_count": 1,
+      "subresource_uris": {
+        "credentials": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists/ALe188908469f51e7663014ea98f776862/IpAddresses"
+      },
+      "sid": "ALe188908469f51e7663014ea98f776862",
+      "date_updated": "Fri, 24 Mar 2017 14:02:20 -0000",
+      "date_created": "Fri, 24 Mar 2017 14:02:20 -0000",
+      "friendly_name": "MyAclList",
+      "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists/ALe188908469f51e7663014ea98f776862",
+      "account_sid": "ACe1889084056167d57a944486a50ceb46"
+    }
+  ],
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists.json?Page=0&PageSize=100",
+  "page": 0
+}

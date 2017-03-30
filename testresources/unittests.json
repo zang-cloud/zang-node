@@ -1,0 +1,1720 @@
+{
+  "AccountsTest": {
+    "viewAccount": {
+      "method": "GET",
+      "path": "Accounts",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/accounts/account.json"
+    },
+    "updateAccount": {
+      "method": "POST",
+      "path": "Accounts",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "friendlyname1"
+        }
+      ],
+      "queryParams": null,
+      "response": "/accounts/account.json"
+    }
+  },
+  "ApplicationClientsTest": {
+    "viewApplicationClient": {
+      "method": "GET",
+      "path": "Applications/TestApplicationSid/Clients/TestApplicationClientSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/applicationclients/applicationclient.json"
+    },
+    "listApplicationClients": {
+      "method": "GET",
+      "path": "Applications/TestApplicationSid/Clients.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/applicationclients/applicationclientslist.json"
+    },
+    "createApplicationClient": {
+      "method": "POST",
+      "path": "Applications/TestApplicationSid/Clients/Tokens.json",
+      "bodyParams": [
+        {
+          "name": "Nickname",
+          "value": "MyApplicationClient"
+        }
+      ],
+      "queryParams": null,
+      "response": "/applicationclients/applicationclient.json"
+    }
+  },
+  "ApplicationsTest": {
+    "viewApplication": {
+      "method": "GET",
+      "path": "Applications/TestApplicationSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/applications/application.json"
+    },
+    "listApplications": {
+      "method": "GET",
+      "path": "Applications.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        },
+        {
+          "name": "FriendlyName",
+          "value": "TestApplication"
+        }
+      ],
+      "response": "/applications/applicationslist.json"
+    },
+    "createApplication": {
+      "method": "POST",
+      "path": "Applications.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "TestApplication"
+        },
+        {
+          "name": "VoiceUrl",
+          "value": "voiceUrl"
+        },
+        {
+          "name": "VoiceMethod",
+          "value": "POST"
+        },
+        {
+          "name": "VoiceFallbackUrl",
+          "value": "voiceFallbackUrl"
+        },
+        {
+          "name": "VoiceFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "VoiceCallerIdLookup",
+          "value": "true"
+        },
+        {
+          "name": "SmsUrl",
+          "value": "smsUrl"
+        },
+        {
+          "name": "SmsMethod",
+          "value": "POST"
+        },
+        {
+          "name": "SmsFallbackUrl",
+          "value": "smsFallbackUrl"
+        },
+        {
+          "name": "SmsFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "HeartbeatUrl",
+          "value": "heartbeatUrl"
+        },
+        {
+          "name": "HeartbeatMethod",
+          "value": "GET"
+        },
+        {
+          "name": "StatusCallback",
+          "value": "statusCallback"
+        },
+        {
+          "name": "StatusCallbackMethod",
+          "value": "POST"
+        },
+        {
+          "name": "HangupCallback",
+          "value": "hangupCallback"
+        },
+        {
+          "name": "HangupCallbackMethod",
+          "value": "GET"
+        }
+      ],
+      "queryParams": null,
+      "response": "/applications/application.json"
+    },
+    "updateApplication": {
+      "method": "POST",
+      "path": "Applications/TestApplicationSid.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "TestApplication"
+        },
+        {
+          "name": "VoiceUrl",
+          "value": "voiceUrl"
+        },
+        {
+          "name": "VoiceMethod",
+          "value": "POST"
+        },
+        {
+          "name": "VoiceFallbackUrl",
+          "value": "voiceFallbackUrl"
+        },
+        {
+          "name": "VoiceFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "VoiceCallerIdLookup",
+          "value": "true"
+        },
+        {
+          "name": "SmsUrl",
+          "value": "smsUrl"
+        },
+        {
+          "name": "SmsMethod",
+          "value": "POST"
+        },
+        {
+          "name": "SmsFallbackUrl",
+          "value": "smsFallbackUrl"
+        },
+        {
+          "name": "SmsFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "HeartbeatUrl",
+          "value": "heartbeatUrl"
+        },
+        {
+          "name": "HeartbeatMethod",
+          "value": "GET"
+        },
+        {
+          "name": "StatusCallback",
+          "value": "statusCallback"
+        },
+        {
+          "name": "StatusCallbackMethod",
+          "value": "POST"
+        },
+        {
+          "name": "HangupCallback",
+          "value": "hangupCallback"
+        },
+        {
+          "name": "HangupCallbackMethod",
+          "value": "GET"
+        }
+      ],
+      "queryParams": null,
+      "response": "/applications/application.json"
+    },
+    "deleteApplication": {
+      "method": "DELETE",
+      "path": "Applications/TestApplicationSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/applications/application.json"
+    }
+  },
+  "AvailablePhoneNumbersTest": {
+    "listAvailablePhoneNumbers": {
+      "method": "GET",
+      "path": "AvailablePhoneNumbers/HR/Tollfree.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Contains",
+          "value": "123"
+        },
+        {
+          "name": "AreaCode",
+          "value": "052"
+        },
+        {
+          "name": "InRegion",
+          "value": "Istria"
+        },
+        {
+          "name": "InPostalCode",
+          "value": "52210"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "20"
+        }
+      ],
+      "response": "/availablephonenumbers/availablephonenumberslist.json"
+    }
+  },
+  "CallsTest": {
+    "viewCall": {
+      "method": "GET",
+      "path": "Calls/TestCallSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/calls/call.json"
+    },
+    "listCalls": {
+      "method": "GET",
+      "path": "Calls.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "To",
+          "value": "+123456"
+        },
+        {
+          "name": "From",
+          "value": "+654321"
+        },
+        {
+          "name": "Status",
+          "value": "completed"
+        },
+        {
+          "name": "StartTime>",
+          "value": "2016-12-12"
+        },
+        {
+          "name": "StartTime<",
+          "value": "2017-03-19"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
+      "response": "/calls/callslist.json"
+    },
+    "makeCall": {
+      "method": "POST",
+      "path": "Calls.json",
+      "bodyParams": [
+        {
+          "name": "To",
+          "value": "+123456"
+        },
+        {
+          "name": "From",
+          "value": "+654321"
+        },
+        {
+          "name": "Url",
+          "value": "TestUrl"
+        },
+        {
+          "name": "Method",
+          "value": "GET"
+        },
+        {
+          "name": "FallbackUrl",
+          "value": "FallbackUrl"
+        },
+        {
+          "name": "FallbackMethod",
+          "value": "POST"
+        },
+        {
+          "name": "StatusCallback",
+          "value": "StatusCallback"
+        },
+        {
+          "name": "StatusCallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "HeartbeatUrl",
+          "value": "HeartbeatUrl"
+        },
+        {
+          "name": "HeartbeatMethod",
+          "value": "GET"
+        },
+        {
+          "name": "ForwardedFrom",
+          "value": "1234"
+        },
+        {
+          "name": "PlayDtmf",
+          "value": "123#"
+        },
+        {
+          "name": "Timeout",
+          "value": "122"
+        },
+        {
+          "name": "HideCallerId",
+          "value": "true"
+        },
+        {
+          "name": "Record",
+          "value": "true"
+        },
+        {
+          "name": "RecordCallback",
+          "value": "RecordCallback"
+        },
+        {
+          "name": "RecordCallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "Transcribe",
+          "value": "true"
+        },
+        {
+          "name": "TranscribeCallback",
+          "value": "TranscribeCallback"
+        },
+        {
+          "name": "StraightToVoicemail",
+          "value": "true"
+        },
+        {
+          "name": "IfMachine",
+          "value": "redirect"
+        },
+        {
+          "name": "IfMachineUrl",
+          "value": "IfMachineUrl"
+        },
+        {
+          "name": "IfMachineMethod",
+          "value": "GET"
+        },
+        {
+          "name": "SipAuthUsername",
+          "value": "username"
+        },
+        {
+          "name": "SipAuthPassword",
+          "value": "password"
+        }
+      ],
+      "queryParams": null,
+      "response": "/calls/call.json"
+    },
+    "interruptLiveCall": {
+      "method": "POST",
+      "path": "Calls/TestCallSid.json",
+      "bodyParams": [
+        {
+          "name": "Url",
+          "value": "TestUrl"
+        },
+        {
+          "name": "Method",
+          "value": "GET"
+        },
+        {
+          "name": "Status",
+          "value": "canceled"
+        }
+      ],
+      "queryParams": null,
+      "response": "/calls/call.json"
+    },
+    "sendDigitsToLiveCall": {
+      "method": "POST",
+      "path": "Calls/TestCallSid.json",
+      "bodyParams": [
+        {
+          "name": "PlayDtmf",
+          "value": "0123#"
+        },
+        {
+          "name": "PlayDtmfDirection",
+          "value": "out"
+        }
+      ],
+      "queryParams": null,
+      "response": "/calls/call.json"
+    },
+    "recordLiveCall": {
+      "method": "POST",
+      "path": "Calls/TestCallSid/Recordings.json",
+      "bodyParams": [
+        {
+          "name": "Record",
+          "value": "true"
+        },
+        {
+          "name": "Direction",
+          "value": "both"
+        },
+        {
+          "name": "TimeLimit",
+          "value": "15"
+        },
+        {
+          "name": "CallbackUrl",
+          "value": "TestUrl"
+        },
+        {
+          "name": "FileFormat",
+          "value": "mp3"
+        },
+        {
+          "name": "TrimSilence",
+          "value": "true"
+        },
+        {
+          "name": "Transcribe",
+          "value": "true"
+        },
+        {
+          "name": "TranscribeQuality",
+          "value": "hybrid"
+        },
+        {
+          "name": "TranscribeCallback",
+          "value": "TestTranscribeUrl"
+        }
+      ],
+      "queryParams": null,
+      "response": "/calls/call.json"
+    },
+    "playAudioToLiveCall": {
+      "method": "POST",
+      "path": "Calls/TestCallSid/Play.json",
+      "bodyParams": [
+        {
+          "name": "AudioUrl",
+          "value": "AudioUrl"
+        },
+        {
+          "name": "Direction",
+          "value": "both"
+        },
+        {
+          "name": "Loop",
+          "value": "true"
+        }
+      ],
+      "queryParams": null,
+      "response": "/calls/call.json"
+    },
+    "applyVoiceEffect": {
+      "method": "POST",
+      "path": "Calls/TestCallSid/Effect.json",
+      "bodyParams": [
+        {
+          "name": "AudioDirection",
+          "value": "out"
+        },
+        {
+          "name": "Pitch",
+          "value": "5"
+        },
+        {
+          "name": "PitchSemiTones",
+          "value": "4"
+        },
+        {
+          "name": "PitchOctaves",
+          "value": "3"
+        },
+        {
+          "name": "Rate",
+          "value": "2"
+        },
+        {
+          "name": "Tempo",
+          "value": "1"
+        }
+      ],
+      "queryParams": null,
+      "response": "/calls/call.json"
+    }
+  },
+  "CarrierServicesTest": {
+    "carrierLookup": {
+      "method": "POST",
+      "path": "Lookups/Carrier.json",
+      "bodyParams": [
+        {
+          "name": "PhoneNumber",
+          "value": "+1234"
+        }
+      ],
+      "queryParams": null,
+      "response": "/carrierservices/carrierlookupslist.json"
+    },
+    "listCarrierLookups": {
+      "method": "GET",
+      "path": "Lookups/Carrier.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "33"
+        }
+      ],
+      "response": "/carrierservices/carrierlookupslist.json"
+    },
+    "cnamLookup": {
+      "method": "POST",
+      "path": "Lookups/Cnam.json",
+      "bodyParams": [
+        {
+          "name": "PhoneNumber",
+          "value": "+1234"
+        }
+      ],
+      "queryParams": null,
+      "response": "/carrierservices/cnamlookupslist.json"
+    },
+    "listCnamLookups": {
+      "method": "GET",
+      "path": "Lookups/Cnam.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "33"
+        }
+      ],
+      "response": "/carrierservices/cnamlookupslist.json"
+    },
+    "bnaLookup": {
+      "method": "POST",
+      "path": "Lookups/Bna.json",
+      "bodyParams": [
+        {
+          "name": "PhoneNumber",
+          "value": "+1234"
+        }
+      ],
+      "queryParams": null,
+      "response": "/carrierservices/bnalookupslist.json"
+    },
+    "listBnaLookups": {
+      "method": "GET",
+      "path": "Lookups/Bna.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "33"
+        }
+      ],
+      "response": "/carrierservices/bnalookupslist.json"
+    }
+  },
+  "ConferencesTest": {
+    "viewConference": {
+      "method": "GET",
+      "path": "Conferences/TestConferenceSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/conferences/conference.json"
+    },
+    "listConferences": {
+      "method": "GET",
+      "path": "Conferences.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Status",
+          "value": "completed"
+        },
+        {
+          "name": "DateCreated>",
+          "value": "2016-12-12"
+        },
+        {
+          "name": "DateCreated<",
+          "value": "2017-03-19"
+        },
+        {
+          "name": "DateUpdated>",
+          "value": "2016-12-12"
+        },
+        {
+          "name": "DateUpdated<",
+          "value": "2017-03-19"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
+      "response": "/conferences/conferenceslist.json"
+    },
+    "viewParticipant": {
+      "method": "GET",
+      "path": "Conferences/TestConferenceSid/Participants/TestParticipantSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/conferences/participant.json"
+    },
+    "listParticipants": {
+      "method": "GET",
+      "path": "Conferences/TestConferenceSid/Participants.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Muted",
+          "value": "false"
+        },
+        {
+          "name": "Deaf",
+          "value": "false"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
+      "response": "/conferences/participantslist.json"
+    },
+    "muteDeafParticipant": {
+      "method": "POST",
+      "path": "Conferences/TestConferenceSid/Participants/TestParticipantSid.json",
+      "bodyParams": [
+        {
+          "name": "Muted",
+          "value": "true"
+        },
+        {
+          "name": "Deaf",
+          "value": "true"
+        }
+      ],
+      "queryParams": null,
+      "response": "/conferences/participant.json"
+    },
+    "playAudioToParticipant": {
+      "method": "POST",
+      "path": "Conferences/TestConferenceSid/Participants/TestParticipantSid/Play.json",
+      "bodyParams": [
+        {
+          "name": "AudioUrl",
+          "value": "http://mydomain.com/audio.mp3"
+        }
+      ],
+      "queryParams": null,
+      "response": "/conferences/participant.json"
+    },
+    "hangupParticipant": {
+      "method": "DELETE",
+      "path": "Conferences/TestConferenceSid/Participants/TestParticipantSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/conferences/participant.json"
+    }
+  },
+  "FraudControlTest": {
+    "listFraudControlResources": {
+      "method": "GET",
+      "path": "Fraud.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "22"
+        }
+      ],
+      "response": "/fraudcontrol/list.json"
+    },
+    "blockDestination": {
+      "method": "POST",
+      "path": "Fraud/Block/HR.json",
+      "bodyParams": [
+        {
+          "name": "MobileEnabled",
+          "value": "false"
+        },
+        {
+          "name": "LandlineEnabled",
+          "value": "true"
+        },
+        {
+          "name": "SmsEnabled",
+          "value": "false"
+        }
+      ],
+      "queryParams": null,
+      "response": "/fraudcontrol/blocked.json"
+    },
+    "authorizeDestination": {
+      "method": "POST",
+      "path": "Fraud/Authorize/HR.json",
+      "bodyParams": [
+        {
+          "name": "MobileEnabled",
+          "value": "false"
+        },
+        {
+          "name": "LandlineEnabled",
+          "value": "true"
+        },
+        {
+          "name": "SmsEnabled",
+          "value": "false"
+        }
+      ],
+      "queryParams": null,
+      "response": "/fraudcontrol/authorized.json"
+    },
+    "extendDestinationAuthorization": {
+      "method": "POST",
+      "path": "Fraud/Extend/HR.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/fraudcontrol/authorized.json"
+    },
+    "whitelistDestination": {
+      "method": "POST",
+      "path": "Fraud/Whitelist/HR.json",
+      "bodyParams": [
+        {
+          "name": "MobileEnabled",
+          "value": "false"
+        },
+        {
+          "name": "LandlineEnabled",
+          "value": "true"
+        },
+        {
+          "name": "SmsEnabled",
+          "value": "false"
+        }
+      ],
+      "queryParams": null,
+      "response": "/fraudcontrol/whitelisted.json"
+    }
+  },
+  "IncomingPhoneNumbersTest": {
+    "viewIncomingPhoneNumber": {
+      "method": "GET",
+      "path": "IncomingPhoneNumbers/TestIncomingPhoneNumberSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/incomingphonenumbers/incomingphonenumber.json"
+    },
+    "listIncomingPhoneNumbers": {
+      "method": "GET",
+      "path": "IncomingPhoneNumbers.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Contains",
+          "value": "123"
+        },
+        {
+          "name": "FriendlyName",
+          "value": "MyNumber"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "25"
+        }
+      ],
+      "response": "/incomingphonenumbers/incomingphonenumberslist.json"
+    },
+    "purchaseIncomingPhoneNumber": {
+      "method": "POST",
+      "path": "IncomingPhoneNumbers.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "MyNumber"
+        },
+        {
+          "name": "PhoneNumber",
+          "value": "+1234"
+        },
+        {
+          "name": "AreaCode",
+          "value": "123"
+        },
+        {
+          "name": "VoiceCallerIdLookup",
+          "value": "true"
+        },
+        {
+          "name": "VoiceApplicationSid",
+          "value": "VoiceApplicationSid"
+        },
+        {
+          "name": "SmsApplicationSid",
+          "value": "SmsApplicationSid"
+        },
+        {
+          "name": "VoiceUrl",
+          "value": "VoiceUrl"
+        },
+        {
+          "name": "VoiceMethod",
+          "value": "GET"
+        },
+        {
+          "name": "VoiceFallbackUrl",
+          "value": "VoiceFallbackUrl"
+        },
+        {
+          "name": "VoiceFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "SmsUrl",
+          "value": "SmsUrl"
+        },
+        {
+          "name": "SmsMethod",
+          "value": "GET"
+        },
+        {
+          "name": "SmsFallbackUrl",
+          "value": "SmsFallbackUrl"
+        },
+        {
+          "name": "SmsFallbackMethod",
+          "value": "POST"
+        },
+        {
+          "name": "HeartbeatUrl",
+          "value": "HeartbeatUrl"
+        },
+        {
+          "name": "HeartbeatMethod",
+          "value": "POST"
+        },
+        {
+          "name": "StatusCallback",
+          "value": "StatusCallback"
+        },
+        {
+          "name": "StatusCallbackMethod",
+          "value": "POST"
+        },
+        {
+          "name": "HangupCallback",
+          "value": "HangupCallback"
+        },
+        {
+          "name": "HangupCallbackMethod",
+          "value": "POST"
+        }
+      ],
+      "queryParams": null,
+      "response": "/incomingphonenumbers/incomingphonenumber.json"
+    },
+    "updateIncomingPhoneNumber": {
+      "method": "POST",
+      "path": "IncomingPhoneNumbers/TestIncomingPhoneNumberSid.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "MyNumber"
+        },
+        {
+          "name": "VoiceCallerIdLookup",
+          "value": "true"
+        },
+        {
+          "name": "VoiceUrl",
+          "value": "VoiceUrl"
+        },
+        {
+          "name": "VoiceMethod",
+          "value": "GET"
+        },
+        {
+          "name": "VoiceFallbackUrl",
+          "value": "VoiceFallbackUrl"
+        },
+        {
+          "name": "VoiceFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "SmsUrl",
+          "value": "SmsUrl"
+        },
+        {
+          "name": "SmsMethod",
+          "value": "GET"
+        },
+        {
+          "name": "SmsFallbackUrl",
+          "value": "SmsFallbackUrl"
+        },
+        {
+          "name": "SmsFallbackMethod",
+          "value": "POST"
+        },
+        {
+          "name": "HeartbeatUrl",
+          "value": "HeartbeatUrl"
+        },
+        {
+          "name": "HeartbeatMethod",
+          "value": "POST"
+        },
+        {
+          "name": "StatusCallback",
+          "value": "StatusCallback"
+        },
+        {
+          "name": "StatusCallbackMethod",
+          "value": "POST"
+        },
+        {
+          "name": "HangupCallback",
+          "value": "HangupCallback"
+        },
+        {
+          "name": "HangupCallbackMethod",
+          "value": "POST"
+        }
+      ],
+      "queryParams": null,
+      "response": "/incomingphonenumbers/incomingphonenumber.json"
+    },
+    "deleteIncomingPhoneNumber": {
+      "method": "DELETE",
+      "path": "IncomingPhoneNumbers/TestIncomingPhoneNumberSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/incomingphonenumbers/incomingphonenumber.json"
+    }
+  },
+  "NotificationsTest": {
+    "viewNotification": {
+      "method": "GET",
+      "path": "Notifications/TestNotificationSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/notifications/notification.json"
+    },
+    "listNotifications": {
+      "method": "GET",
+      "path": "Notifications.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Log",
+          "value": "2"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "33"
+        }
+      ],
+      "response": "/notifications/notificationslist.json"
+    }
+  },
+  "RecordingsTest": {
+    "viewRecording": {
+      "method": "GET",
+      "path": "Recordings/TestRecordingSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/recordings/recording.json"
+    },
+    "listRecordings": {
+      "method": "GET",
+      "path": "Recordings.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "CallSid",
+          "value": "TestCallSid"
+        },
+        {
+          "name": "DateCreated>",
+          "value": "2016-12-12"
+        },
+        {
+          "name": "DateCreated<",
+          "value": "2017-03-19"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "33"
+        }
+      ],
+      "response": "/recordings/recordingslist.json"
+    },
+    "recordCall": {
+      "method": "POST",
+      "path": "Calls/TestCallSid/Recordings.json",
+      "bodyParams": [
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "Record",
+          "value": "true"
+        },
+        {
+          "name": "Direction",
+          "value": "out"
+        },
+        {
+          "name": "TimeLimit",
+          "value": "1337"
+        },
+        {
+          "name": "CallbackUrl",
+          "value": "CallbackUrl"
+        },
+        {
+          "name": "FileFormat",
+          "value": "wav"
+        },
+        {
+          "name": "TrimSilence",
+          "value": "true"
+        },
+        {
+          "name": "Transcribe",
+          "value": "true"
+        },
+        {
+          "name": "TranscribeQuality",
+          "value": "hybrid"
+        },
+        {
+          "name": "TranscribeCallback",
+          "value": "TranscribeCallback"
+        }
+      ],
+      "queryParams": null,
+      "response": "/recordings/recording.json"
+    },
+    "deleteRecording": {
+      "method": "DELETE",
+      "path": "Recordings/TestRecordingSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/recordings/recording.json"
+    }
+  },
+  "SipAclTest": {
+    "viewIpAcl": {
+      "method": "GET",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/ipacl.json"
+    },
+    "listIpAcls": {
+      "method": "GET",
+      "path": "SIP/IpAccessControlLists.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "50"
+        }
+      ],
+      "response": "/sipdomains/ipacllist.json"
+    },
+    "createIpAcl": {
+      "method": "POST",
+      "path": "SIP/IpAccessControlLists.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "MyIpAclList"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/ipacl.json"
+    },
+    "updateIpAcl": {
+      "method": "POST",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "NewIpAclList"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/ipacl.json"
+    },
+    "deleteIpAcl": {
+      "method": "DELETE",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/ipacl.json"
+    },
+    "viewAclIp": {
+      "method": "GET",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid/IpAddresses/TestIpAddressSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/ipaddress.json"
+    },
+    "listAclIps": {
+      "method": "GET",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid/IpAddresses.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/ipaddresslist.json"
+    },
+    "addAclIp": {
+      "method": "POST",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid/IpAddresses.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "MyIpAddress"
+        },
+        {
+          "name": "IpAddress",
+          "value": "10.0.0.1"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/ipaddress.json"
+    },
+    "updateAclIp": {
+      "method": "POST",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid/IpAddresses/TestIpAddressSid.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "NewIpAddress"
+        },
+        {
+          "name": "IpAddress",
+          "value": "10.0.0.2"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/ipaddress.json"
+    },
+    "deleteAclIp": {
+      "method": "DELETE",
+      "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid/IpAddresses/TestIpAddressSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/ipaddress.json"
+    }
+  },
+  "SipCredentialsTest": {
+    "viewCredentialsList": {
+      "method": "GET",
+      "path": "SIP/CredentialLists/TestCredentialsListSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/credentialslist.json"
+    },
+    "listCredentialsLists": {
+      "method": "GET",
+      "path": "SIP/CredentialLists.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/credentialslistlist.json"
+    },
+    "createCredentialsList": {
+      "method": "POST",
+      "path": "SIP/CredentialLists.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "MyCredentialsList"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/credentialslist.json"
+    },
+    "updateCredentialsList": {
+      "method": "POST",
+      "path": "SIP/CredentialLists/TestCredentialsListSid.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "NewCredentialsList"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/credentialslist.json"
+    },
+    "deleteCredentialsList": {
+      "method": "DELETE",
+      "path": "SIP/CredentialLists/TestCredentialsListSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/credentialslist.json"
+    },
+    "viewCredential": {
+      "method": "GET",
+      "path": "SIP/CredentialLists/TestCredentialsListSid/Credentials/TestCredentialSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/credential.json"
+    },
+    "listCredentials": {
+      "method": "GET",
+      "path": "SIP/CredentialLists/TestCredentialsListSid/Credentials.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/listofcredentials.json"
+    },
+    "createCredential": {
+      "method": "POST",
+      "path": "SIP/CredentialLists/TestCredentialsListSid/Credentials.json",
+      "bodyParams": [
+        {
+          "name": "Username",
+          "value": "username"
+        },
+        {
+          "name": "Password",
+          "value": "password"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/credential.json"
+    },
+    "updateCredential": {
+      "method": "POST",
+      "path": "SIP/CredentialLists/TestCredentialsListSid/Credentials/TestCredentialSid.json",
+      "bodyParams": [
+        {
+          "name": "Password",
+          "value": "password"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/credential.json"
+    },
+    "deleteCredential": {
+      "method": "DELETE",
+      "path": "SIP/CredentialLists/TestCredentialsListSid/Credentials/TestCredentialSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/credential.json"
+    }
+  },
+  "SipDomainsTest": {
+    "viewDomain": {
+      "method": "GET",
+      "path": "SIP/Domains/TestDomainSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/domain.json"
+    },
+    "listDomains": {
+      "method": "GET",
+      "path": "SIP/Domains.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/domainslist.json"
+    },
+    "createDomain": {
+      "method": "POST",
+      "path": "SIP/Domains.json",
+      "bodyParams": [
+        {
+          "name": "DomainName",
+          "value": "mydomain.com"
+        },
+        {
+          "name": "FriendlyName",
+          "value": "MyDomain"
+        },
+        {
+          "name": "VoiceUrl",
+          "value": "VoiceUrl"
+        },
+        {
+          "name": "VoiceMethod",
+          "value": "POST"
+        },
+        {
+          "name": "VoiceFallbackUrl",
+          "value": "VoiceFallbackUrl"
+        },
+        {
+          "name": "VoiceFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "HeartbeatUrl",
+          "value": "HeartbeatUrl"
+        },
+        {
+          "name": "HeartbeatMethod",
+          "value": "POST"
+        },
+        {
+          "name": "VoiceStatusCallback",
+          "value": "VoiceStatusCallback"
+        },
+        {
+          "name": "VoiceStatusCallbackMethod",
+          "value": "GET"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/domain.json"
+    },
+    "updateDomain": {
+      "method": "POST",
+      "path": "SIP/Domains/TestDomainSid.json",
+      "bodyParams": [
+        {
+          "name": "FriendlyName",
+          "value": "MyDomain"
+        },
+        {
+          "name": "VoiceUrl",
+          "value": "VoiceUrl"
+        },
+        {
+          "name": "VoiceMethod",
+          "value": "POST"
+        },
+        {
+          "name": "VoiceFallbackUrl",
+          "value": "VoiceFallbackUrl"
+        },
+        {
+          "name": "VoiceFallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "HeartbeatUrl",
+          "value": "HeartbeatUrl"
+        },
+        {
+          "name": "HeartbeatMethod",
+          "value": "POST"
+        },
+        {
+          "name": "VoiceStatusCallback",
+          "value": "VoiceStatusCallback"
+        },
+        {
+          "name": "VoiceStatusCallbackMethod",
+          "value": "GET"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/domain.json"
+    },
+    "deleteDomain": {
+      "method": "DELETE",
+      "path": "SIP/Domains/TestDomainSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/domain.json"
+    },
+    "listMappedCredentialsList": {
+      "method": "GET",
+      "path": "SIP/Domains/TestDomainSid/CredentialListMappings.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/credentialslistlist.json"
+    },
+    "mapCredentialsList": {
+      "method": "POST",
+      "path": "SIP/Domains/TestDomainSid/CredentialListMappings.json",
+      "bodyParams": [
+        {
+          "name": "CredentialListSid",
+          "value": "TestCredentialsListSid"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/credentialslist.json"
+    },
+    "deleteMappedCredentialsList": {
+      "method": "DELETE",
+      "path": "SIP/Domains/TestDomainSid/CredentialListMappings/TestCredentialsListSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/credentialslist.json"
+    },
+    "listMappedIpAcls": {
+      "method": "GET",
+      "path": "SIP/Domains/TestDomainSid/IpAccessControlListMappings.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/ipacllist.json"
+    },
+    "mapIpAcl": {
+      "method": "POST",
+      "path": "SIP/Domains/TestDomainSid/IpAccessControlListMappings.json",
+      "bodyParams": [
+        {
+          "name": "IpAccessControlListSid",
+          "value": "TestIpAccessControlListSid"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sipdomains/ipacl.json"
+    },
+    "deleteIpAcl": {
+      "method": "DELETE",
+      "path": "SIP/Domains/TestDomainSid/IpAccessControlListMappings/TestIpAccessControlListSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sipdomains/ipacl.json"
+    }
+  },
+  "SmsTest": {
+    "viewSms": {
+      "method": "GET",
+      "path": "SMS/Messages/TestSmsSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/sms/sms.json"
+    },
+    "listSms": {
+      "method": "GET",
+      "path": "SMS/Messages.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "To",
+          "value": "+123456"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
+      "response": "/sms/smslist.json"
+    },
+    "sendSms": {
+      "method": "POST",
+      "path": "SMS/Messages.json",
+      "bodyParams": [
+        {
+          "name": "To",
+          "value": "+123456"
+        },
+        {
+          "name": "From",
+          "value": "+654321"
+        },
+        {
+          "name": "Body",
+          "value": "test from java"
+        },
+        {
+          "name": "StatusCallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "AllowMultiple",
+          "value": "False"
+        }
+      ],
+      "queryParams": null,
+      "response": "/sms/sms.json"
+    }
+  },
+  "TranscriptionsTest": {
+    "viewTranscription": {
+      "method": "GET",
+      "path": "Transcriptions/TestTranscriptionSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/transcriptions/transcription.json"
+    },
+    "listTranscriptions": {
+      "method": "GET",
+      "path": "Transcriptions.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Status",
+          "value": "completed"
+        },
+        {
+          "name": "DateTranscribed>",
+          "value": "2016-12-12"
+        },
+        {
+          "name": "DateTranscribed<",
+          "value": "2017-03-19"
+        },
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "33"
+        }
+      ],
+      "response": "/transcriptions/transcriptionslist.json"
+    },
+    "transcribeRecording": {
+      "method": "POST",
+      "path": "Recordings/TestRecordingSid/Transcriptions.json",
+      "bodyParams": [
+        {
+          "name": "TranscribeCallback",
+          "value": "TranscribeCallback"
+        },
+        {
+          "name": "CallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "SliceStart",
+          "value": "0"
+        },
+        {
+          "name": "SliceDuration",
+          "value": "33"
+        },
+        {
+          "name": "Quality",
+          "value": "hybrid"
+        }
+      ],
+      "queryParams": null,
+      "response": "/transcriptions/transcription.json"
+    },
+    "transcribeAudioUrl": {
+      "method": "POST",
+      "path": "Transcriptions.json",
+      "bodyParams": [
+        {
+          "name": "AudioUrl",
+          "value": "AudioUrl"
+        },
+        {
+          "name": "TranscribeCallback",
+          "value": "TranscribeCallback"
+        },
+        {
+          "name": "CallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "SliceStart",
+          "value": "0"
+        },
+        {
+          "name": "SliceDuration",
+          "value": "33"
+        },
+        {
+          "name": "Quality",
+          "value": "auto"
+        }
+      ],
+      "queryParams": null,
+      "response": "/transcriptions/transcription.json"
+    }
+  },
+  "UsagesTest": {
+    "viewUsage": {
+      "method": "GET",
+      "path": "Usages/TestUsageSid.json",
+      "bodyParams": null,
+      "queryParams": null,
+      "response": "/usages/usage.json"
+    },
+    "listUsages": {
+      "method": "GET",
+      "path": "Usages.json",
+      "bodyParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "25"
+        },
+        {
+          "name": "Day",
+          "value": "12"
+        },
+        {
+          "name": "Month",
+          "value": "12"
+        },
+        {
+          "name": "Year",
+          "value": "2016"
+        },
+        {
+          "name": "Product",
+          "value": "3"
+        }
+      ],
+      "response": "/usages/usageslist.json"
+    }
+  }
+}

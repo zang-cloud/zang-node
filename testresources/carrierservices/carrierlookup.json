@@ -1,0 +1,18 @@
+{
+  "phone_number": "+14086474636",
+  "date_updated": "Fri, 24 Mar 2017 14:38:55 -0000",
+  "price": "0.01",
+  "carrier_id": 22607,
+  "sponsor_carrier_id": 22190,
+  "sponsor_mobile": false,
+  "country_code": "US",
+  "network": "Google (Grand Central) BWI - Bandwidth.com - Syniverse",
+  "mobile": true,
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Carrier/CRbf8890845952a46cb1f74a29bbf9f1b3",
+  "account_sid": "ACe1889084056167d57a944486a50ceb46",
+  "sponsor_network": "Bandwidth.com CLEC, LLC",
+  "sid": "CRbf8890845952a46cb1f74a29bbf9f1b3",
+  "date_created": "Fri, 24 Mar 2017 14:38:53 -0000",
+  "api_version": "v2",
+  "sponsor_country_code": "US"
+}

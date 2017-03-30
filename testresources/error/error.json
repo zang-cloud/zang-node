@@ -1,0 +1,6 @@
+{
+  "status": 400,
+  "message": "Country could not be authorized",
+  "code": 70001,
+  "more_info": "http://www.telapi.com/docs/api/rest/overview/errors/70001"
+}

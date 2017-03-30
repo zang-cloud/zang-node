@@ -1,0 +1,12 @@
+{
+  "ip_addresses_count": 0,
+  "subresource_uris": {
+    "credentials": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists/AL22889084490426121fee48688affbda3/IpAddresses"
+  },
+  "sid": "AL22889084490426121fee48688affbda3",
+  "date_updated": "Fri, 24 Mar 2017 12:59:55 -0000",
+  "date_created": "Fri, 24 Mar 2017 12:59:51 -0000",
+  "friendly_name": "MyAclList2",
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists/AL22889084490426121fee48688affbda3",
+  "account_sid": "ACe1889084056167d57a944486a50ceb46"
+}

@@ -1,0 +1,26 @@
+{
+  "first_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Recordings.json?Page=0&amp;PageSize=50",
+  "recordings": [
+    {
+      "duration": 15,
+      "call_sid": "CA4288908428ae2061275a412e80bf1929",
+      "sid": "RE4288908463cd614b41084509ad8893a7",
+      "date_updated": "Fri, 24 Mar 2017 16:07:01 -0000",
+      "date_created": "Fri, 24 Mar 2017 16:06:32 -0000",
+      "price": "0.00",
+      "recording_url": "http://recordings.telapi.com/RBfcc94a3e2b5d4e4c89f7017d6387ffb8/RE4288908463cd614b41084509ad8893a7.mp3",
+      "api_version": "v2",
+      "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Recordings/RE4288908463cd614b41084509ad8893a7"
+    }
+  ],
+  "end": 0,
+  "total": 1,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Recordings.json",
+  "page_size": 50,
+  "start": 0,
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Recordings.json?Page=0&PageSize=50",
+  "page": 0
+}

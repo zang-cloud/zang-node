@@ -1,0 +1,14 @@
+{
+  "date_updated": "Fri, 17 Mar 2017 17:07:59 -0000",
+  "presence_status": "init",
+  "nickname": "MyApplicationClient",
+  "client_password": "4f3a198794f2e68d814aaff38d5849d086ea0d48",
+  "uri": "/v2/Accounts/TestAccountSid/Applications/TestApplicationSid/Clients/TestApplicationClientSid",
+  "session_id": null,
+  "account_sid": "TestAccountSid",
+  "application_sid": "TestApplicationSid",
+  "sid": "TestApplicationClientSid",
+  "date_created": "Fri, 17 Mar 2017 17:07:59 -0000",
+  "api_version": "v2",
+  "remote_ip": "10.0.0.1"
+}

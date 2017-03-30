@@ -1,0 +1,42 @@
+{
+  "first_page_uri": "/v2/Accounts/TestAccountSid/Calls.json?Page=0&amp;PageSize=50",
+  "end": 0,
+  "total": 1,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "calls": [
+    {
+      "date_updated": "Thu, 16 Mar 2017 13:49:37 -0000",
+      "parent_call_sid": "",
+      "duration": 4,
+      "from": "+654321",
+      "to": "+123456",
+      "caller_id_blocked": "false",
+      "answered_by": "tbd",
+      "sid": "TestCallSid",
+      "recordings_count": "",
+      "price": "0.1872",
+      "api_version": "v2",
+      "status": "completed",
+      "direction": "outbound-api",
+      "start_time": "Thu, 16 Mar 2017 13:49:33 -0000",
+      "date_created": "Thu, 16 Mar 2017 13:49:22 -0000",
+      "subresource_uris": {
+        "notifications": "/v2/Accounts/TestAccountSid/Calls/TestCallSid/Notifications",
+        "recordings": "/v2/Accounts/TestAccountSid/Calls/TestCallSid/Recordings"
+      },
+      "forwarded_from": "",
+      "uri": "/v2/Accounts/TestAccountSid/Calls/TestCallSid",
+      "account_sid": "TestAccountSid",
+      "duration_billed": 30,
+      "end_time": "Thu, 16 Mar 2017 13:49:37 -0000",
+      "phone_number_sid": ""
+    }
+  ],
+  "uri": "/v2/Accounts/TestAccountSid/Calls.json",
+  "page_size": 50,
+  "start": 0,
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/TestAccountSid/Calls.json?Page=0&PageSize=50",
+  "page": 0
+}

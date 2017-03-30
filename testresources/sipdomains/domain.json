@@ -1,0 +1,23 @@
+{
+  "auth_type": "ip_and_credential",
+  "voice_status_callback_method": "POST",
+  "voice_heartbeat_callback": null,
+  "subresource_uris": {
+    "ip_access_control_list_mappings": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD7c88908470f591b05ec943e08157d65d/IpAccessControlListMappings",
+    "credential_list_mappings": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD7c88908470f591b05ec943e08157d65d/CredentialListMappings"
+  },
+  "domain_sip_url": "mytestdomain.com.sip.zang.io",
+  "date_updated": "Fri, 24 Mar 2017 14:02:24 -0000",
+  "voice_status_callback_url": null,
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD7c88908470f591b05ec943e08157d65d",
+  "friendly_name": "MyDomain2",
+  "domain_name": "mytestdomain.com",
+  "account_sid": "ACe1889084056167d57a944486a50ceb46",
+  "voice_url": "http://telapi.com/ivr/welcome/call",
+  "voice_heartbeat_callback_method": "POST",
+  "sid": "SD7c88908470f591b05ec943e08157d65d",
+  "date_created": "Fri, 24 Mar 2017 14:02:05 -0000",
+  "voice_fallback_method": "POST",
+  "voice_method": "POST",
+  "voice_fallback_url": null
+}

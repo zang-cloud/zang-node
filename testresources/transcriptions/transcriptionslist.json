@@ -1,0 +1,47 @@
+{
+  "first_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Transcriptions.json?Page=0&amp;PageSize=50",
+  "transcriptions": [
+    {
+      "status": "completed",
+      "date_updated": "Fri, 24 Mar 2017 14:15:49 -0000",
+      "price": "0.05",
+      "transcribe_callback": "",
+      "duration": 50,
+      "callback_method": "POST",
+      "audio_url": "http://dev.calyx.hr/~vprenner/zang.mp3",
+      "type": "auto",
+      "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Transcriptions/TR7c8890840d9c90f6a8a74b43b513373b",
+      "account_sid": "ACe1889084056167d57a944486a50ceb46",
+      "sid": "TR7c8890840d9c90f6a8a74b43b513373b",
+      "date_created": "Fri, 24 Mar 2017 14:15:39 -0000",
+      "transcription_text": "Hello from St. Cloud. We hope you like.",
+      "api_version": "v2"
+    },
+    {
+      "status": "completed",
+      "date_updated": "Fri, 24 Mar 2017 14:15:15 -0000",
+      "price": "0.05",
+      "transcribe_callback": "",
+      "duration": 50,
+      "callback_method": "POST",
+      "audio_url": "http://dev.calyx.hr/~vprenner/zang.mp3",
+      "type": "auto",
+      "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Transcriptions/TR8f889084c11dd029a3db45fcbab9669a",
+      "account_sid": "ACe1889084056167d57a944486a50ceb46",
+      "sid": "TR8f889084c11dd029a3db45fcbab9669a",
+      "date_created": "Fri, 24 Mar 2017 14:14:48 -0000",
+      "transcription_text": "Hello from St. Cloud. We hope you like this.",
+      "api_version": "v2"
+    }
+  ],
+  "end": 1,
+  "total": 2,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Transcriptions.json",
+  "page_size": 50,
+  "start": 0,
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Transcriptions.json?Page=0&PageSize=50",
+  "page": 0
+}

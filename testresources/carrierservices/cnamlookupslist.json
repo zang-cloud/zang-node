@@ -1,0 +1,55 @@
+{
+  "first_page_uri" : "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Lookups/Cnam.json?Page=0&amp;PageSize=50",
+  "end" : 3,
+  "total" : 4,
+  "previous_page_uri" : "",
+  "cnam_dips" : [{
+    "phone_number" : "+19093900002",
+    "body" : null,
+    "sid" : "CL6588908407bcc1991e244475aaadec39",
+    "date_updated" : "Fri, 24 Mar 2017 14:44:35 -0000",
+    "date_created" : "Fri, 24 Mar 2017 14:44:35 -0000",
+    "price" : "0.00",
+    "uri" : "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/CNAM/CL6588908407bcc1991e244475aaadec39",
+    "api_version" : "v2",
+    "account_sid" : "ACe1889084056167d57a944486a50ceb46"
+  }, {
+    "phone_number" : "+12136210002",
+    "body" : null,
+    "sid" : "CLe1889084ef020d1a6cae4a80ab247a83",
+    "date_updated" : "Fri, 24 Mar 2017 14:44:13 -0000",
+    "date_created" : "Fri, 24 Mar 2017 14:44:13 -0000",
+    "price" : "0.00",
+    "uri" : "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/CNAM/CLe1889084ef020d1a6cae4a80ab247a83",
+    "api_version" : "v2",
+    "account_sid" : "ACe1889084056167d57a944486a50ceb46"
+  }, {
+    "phone_number" : "+16786318356",
+    "body" : null,
+    "sid" : "CL7c8890844db082a237d74db49ac8ba47",
+    "date_updated" : "Fri, 24 Mar 2017 14:42:52 -0000",
+    "date_created" : "Fri, 24 Mar 2017 14:42:52 -0000",
+    "price" : "0.00",
+    "uri" : "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/CNAM/CL7c8890844db082a237d74db49ac8ba47",
+    "api_version" : "v2",
+    "account_sid" : "ACe1889084056167d57a944486a50ceb46"
+  }, {
+    "phone_number" : "+14086474636",
+    "body" : null,
+    "sid" : "CLe18890848d70716b0cbb46f683d1ec74",
+    "date_updated" : "Fri, 24 Mar 2017 14:41:33 -0000",
+    "date_created" : "Fri, 24 Mar 2017 14:41:33 -0000",
+    "price" : "0.00",
+    "uri" : "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/CNAM/CLe18890848d70716b0cbb46f683d1ec74",
+    "api_version" : "v2",
+    "account_sid" : "ACe1889084056167d57a944486a50ceb46"
+  }
+  ],
+  "num_pages" : 1,
+  "uri" : "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Lookups/Cnam.json",
+  "page_size" : 50,
+  "start" : 0,
+  "next_page_uri" : "",
+  "last_page_uri" : "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Lookups/Cnam.json?Page=0&PageSize=50",
+  "page" : 0
+}

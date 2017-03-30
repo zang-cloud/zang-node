@@ -1,0 +1,10 @@
+{
+  "date_created": "Fri, 24 Mar 2017 13:41:29 -0000",
+  "subresource_uris": {},
+  "sid": "IP07889084591f8069baee4a6c905737d4",
+  "date_updated": "Fri, 24 Mar 2017 13:41:29 -0000",
+  "ip_address": "192.168.12.12",
+  "friendly_name": "MyIpAddress",
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/IpAccessControlLists/ALe18890846cf5af782c3d4bcdab57e93e/IpAddresses/IP07889084591f8069baee4a6c905737d4",
+  "account_sid": "ACe1889084056167d57a944486a50ceb46"
+}

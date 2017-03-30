@@ -1,0 +1,31 @@
+{
+  "date_updated": "Fri, 24 Feb 2017 17:57:26 -0000",
+  "voice_url": "http://www.zang.io/ivr/welcome/call",
+  "voice_fallback_method": "POST",
+  "capabilities": {
+    "voice": "true",
+    "sms": "true"
+  },
+  "sid": "DI4c63384b765b51ddec144e79894947f1",
+  "heartbeat_method": "POST",
+  "type": "local",
+  "status_callback_method": "POST",
+  "voice_fallback_url": "",
+  "phone_number": "+19894945633",
+  "hangup_callback": "",
+  "hangup_callback_method": "POST",
+  "heartbeat_url": "",
+  "sms_url": "http://www.zang.io/ivr/welcome/sms",
+  "voice_method": "POST",
+  "voice_caller_id_lookup": "false",
+  "friendly_name": "(989) 494-5633",
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/IncomingPhoneNumbers/DI4c63384b765b51ddec144e79894947f1",
+  "sms_fallback_url": "",
+  "account_sid": "ACe1889084056167d57a944486a50ceb46",
+  "sms_method": "POST",
+  "api_version": "v2",
+  "sms_fallback_method": "POST",
+  "next_renewal_date": "Sun, 26 Mar 2017 17:57:26 -0000",
+  "date_created": "Fri, 14 Nov 2014 09:08:00 -0000",
+  "status_callback": ""
+}

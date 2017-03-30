@@ -1,0 +1,15 @@
+{
+  "body": "test from java",
+  "status": "sent",
+  "direction": "outbound-api",
+  "date_updated": "Tue, 28 Feb 2017 14:02:44 -0000",
+  "price": "0.0616",
+  "from": "+654321",
+  "uri": "/v2/Accounts/TestAccountSid/SMS/Messages/TestSMSSid",
+  "account_sid": "TestAccountSid",
+  "to": "+123456",
+  "sid": "TestSMSSid",
+  "date_sent": "Tue, 28 Feb 2017 14:02:44 -0000",
+  "date_created": "Tue, 28 Feb 2017 14:02:38 -0000",
+  "api_version": "v2"
+}

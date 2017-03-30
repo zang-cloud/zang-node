@@ -1,0 +1,61 @@
+{
+  "first_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains.json?Page=0&amp;PageSize=50",
+  "end": 1,
+  "total": 2,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains.json",
+  "page_size": 50,
+  "start": 0,
+  "domains": [
+    {
+      "auth_type": "ip_and_credential",
+      "voice_status_callback_method": "POST",
+      "voice_heartbeat_callback": null,
+      "subresource_uris": {
+        "ip_access_control_list_mappings": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD7c88908470f591b05ec943e08157d65d/IpAccessControlListMappings",
+        "credential_list_mappings": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD7c88908470f591b05ec943e08157d65d/CredentialListMappings"
+      },
+      "domain_sip_url": "mytestdomain.com.sip.zang.io",
+      "date_updated": "Fri, 24 Mar 2017 14:02:18 -0000",
+      "voice_status_callback_url": null,
+      "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD7c88908470f591b05ec943e08157d65d",
+      "friendly_name": "MyDomain2",
+      "domain_name": "mytestdomain.com",
+      "account_sid": "ACe1889084056167d57a944486a50ceb46",
+      "voice_url": "http://telapi.com/ivr/welcome/call",
+      "voice_heartbeat_callback_method": "POST",
+      "sid": "SD7c88908470f591b05ec943e08157d65d",
+      "date_created": "Fri, 24 Mar 2017 14:02:05 -0000",
+      "voice_fallback_method": "POST",
+      "voice_method": "POST",
+      "voice_fallback_url": null
+    },
+    {
+      "auth_type": "no_traffic",
+      "voice_status_callback_method": "POST",
+      "voice_heartbeat_callback": null,
+      "subresource_uris": {
+        "ip_access_control_list_mappings": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD8f889084db16a214a2214fb9960bfd8b/IpAccessControlListMappings",
+        "credential_list_mappings": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD8f889084db16a214a2214fb9960bfd8b/CredentialListMappings"
+      },
+      "domain_sip_url": "mydomain.com.sip.zang.io",
+      "date_updated": "Mon, 20 Mar 2017 13:36:02 -0000",
+      "voice_status_callback_url": "VoiceStatusCallback",
+      "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains/SD8f889084db16a214a2214fb9960bfd8b",
+      "friendly_name": "MYDomain",
+      "domain_name": "mydomain.com",
+      "account_sid": "ACe1889084056167d57a944486a50ceb46",
+      "voice_url": "VoiceUrl",
+      "voice_heartbeat_callback_method": "POST",
+      "sid": "SD8f889084db16a214a2214fb9960bfd8b",
+      "date_created": "Mon, 20 Mar 2017 13:36:02 -0000",
+      "voice_fallback_method": "GET",
+      "voice_method": "POST",
+      "voice_fallback_url": "VoiceFallbackUrl"
+    }
+  ],
+  "next_page_uri": "",
+  "last_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/SIP/Domains.json?Page=0&PageSize=50",
+  "page": 0
+}

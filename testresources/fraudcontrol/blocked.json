@@ -1,0 +1,14 @@
+{
+  "blocked": {
+    "is_lock": false,
+    "mobile_enabled": false,
+    "landline_enabled": true,
+    "date_updated": "Thu, 23 Mar 2017 14:28:39 -0000",
+    "country_code": "DE",
+    "sid": "TestFraudControlRuleSid",
+    "country_name": "Germany",
+    "date_created": "Thu, 23 Mar 2017 14:22:59 -0000",
+    "sms_enabled": true,
+    "country_prefix": "+49"
+  }
+}

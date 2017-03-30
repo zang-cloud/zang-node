@@ -1,0 +1,13 @@
+{
+  "sid" : "TestParticipantSid",
+  "conference_sid" : "TestConferenceSid",
+  "account_sid" : "TestAccountSid",
+  "muted" : "false",
+  "deaf"  : "false",
+  "caller_name" : "Lastname, Firstname",
+  "caller_number": "17325551234",
+  "duration": "55",
+  "uri" : "/v2/Accounts/TestAccountSid/Conferences/TestConferenceSid/Participants/TestParticipantSid",
+  "date_created" : "Tue, 11 Sep 2012 16:32:53 +0000",
+  "date_updated" : "Tue, 11 Sep 2012 16:32:53 +0000"
+}

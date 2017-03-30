@@ -1,0 +1,27 @@
+{
+  "status": "active",
+  "account_balance": "100.9384",
+  "max_outbound_limit": "0.40",
+  "date_updated": "Tue, 28 Feb 2017 11:49:18 -0000",
+  "time_zone": "GMT",
+  "subresource_uris": {
+    "usages": "/v2/Accounts/TestAccountSid/Usages",
+    "conferences": "/v2/Accounts/TestAccountSid/Conferences",
+    "transactions": "/v2/Accounts/TestAccountSid/Transactions",
+    "notifications": "/v2/Accounts/TestAccountSid/Notifications",
+    "fraud": "/v2/Accounts/TestAccountSid/Fraud",
+    "calls": "/v2/Accounts/TestAccountSid/Calls",
+    "transcriptions": "/v2/Accounts/TestAccountSid/Transcriptions",
+    "incoming_phone_numbers": "/v2/Accounts/TestAccountSid/IncomingPhoneNumbers",
+    "sms_messages": "/v2/Accounts/TestAccountSid/SMS/Messages",
+    "carrier": "/v2/Accounts/TestAccountSid/Carrier",
+    "available_phone_numbers": "/v2/Accounts/TestAccountSid/AvailablePhoneNumbers",
+    "cnam": "/v2/Accounts/TestAccountSid/CNAM",
+    "bna": "/v2/Accounts/TestAccountSid/BNA"
+  },
+  "friendly_name": "friendlyname1",
+  "uri": "/v2/Accounts/TestAccountSid",
+  "sid": "TestAccountSid",
+  "date_created": "Tue, 14 Feb 2017 11:53:09 -0000",
+  "type": "full"
+}

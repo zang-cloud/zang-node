@@ -1,0 +1,29 @@
+{
+  "first_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Lookups/Bna.json?Page=0&amp;PageSize=50",
+  "end": 0,
+  "total": 1,
+  "previous_page_uri": "",
+  "num_pages": 1,
+  "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Lookups/Bna.json",
+  "page_size": 50,
+  "start": 0,
+  "next_page_uri": "",
+  "bna_lookups": [
+    {
+      "phone_number": "+14086474636",
+      "sid": "BL2288908475cdd864351b4d048d6ebabd",
+      "date_updated": "Fri, 24 Mar 2017 14:40:39 -0000",
+      "date_created": "Fri, 24 Mar 2017 14:40:39 -0000",
+      "price": "0.05",
+      "uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/BNA/BL2288908475cdd864351b4d048d6ebabd",
+      "api_version": "v2",
+      "account_sid": "ACe1889084056167d57a944486a50ceb46",
+      "city": "Saratoga",
+      "state": "CA",
+      "zip_code": "95070",
+      "country_code": "US"
+    }
+  ],
+  "last_page_uri": "/v2/Accounts/ACe1889084056167d57a944486a50ceb46/Lookups/Bna.json?Page=0&PageSize=50",
+  "page": 0
+}
