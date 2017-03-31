@@ -1,0 +1,8 @@
+{
+  "baseUrl": "test",
+  "sid": "test",
+  "authToken": "test",
+  "proxyHost": "test",
+  "proxyPort": "test",
+  "proxyProtocol": "test"
+}

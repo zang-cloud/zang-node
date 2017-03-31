@@ -12,7 +12,7 @@ const defaultConfiguration = {
 };
 
 const api = {
-    getConfiguration: function(opts) {
+    getConfiguration: opts => {
         opts = opts || {};
         return _.defaults(opts, defaultConfiguration);
     }

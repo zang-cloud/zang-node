@@ -1,7 +1,13 @@
 'use strict';
 
-const api = {
-    Usages: require('./usagesConnector')
+const usagesConnector = require('./usages-connector');
+
+const Factory = function Factory(configuration){
+    if (configuration) {
+        this.usages = new usagesConnector(configuration);
+    }
 };
 
-module.exports = api;
+module.exports = {
+    Factory: Factory
+};

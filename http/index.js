@@ -1,12 +1,23 @@
 'use strict';
 
 const rp = require('request-promise');
+const changeCase = require('change-case');
+const _ = require('lodash');
 
 const api = {
-    request: function(config, opts) {
+    request: function (config, opts) {
+        let qs = undefined;
+        if (opts.queryParams) {
+            qs = _.mapKeys(opts.queryParams, (value, key) => changeCase.pascal(key));
+        }
 
-        return rp({
-            method: opts.method,
+        let body = undefined;
+        if (opts.body) {
+            body = _.mapKeys(opts.body, (value, key) => changeCase.pascal(key));
+        }
+
+        let requestParameters = {
+            method: opts.method || 'GET',
             url: `${config.baseUrl}/Accounts/${opts.accountSid || config.accountSid}${opts.path}`,
             json: true,
             auth: {
@@ -14,9 +25,10 @@ const api = {
                 password: config.authToken,
                 sendImmediately: true
             },
-            qs: opts.queryParams,
-            body: opts.body
-        });
+            qs,
+            body
+        };
+        return rp(requestParameters);
     }
 };
 
