@@ -3,12 +3,13 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef HttpMethod
+ * @typedef TranscriptionQuality
  * @enum {string}
  */
 const values = {
-    POST: 'POST',
-    GET: 'GET'
+    AUTO: 'auto',
+    HYBRID: 'hybrid',
+    KEYWORDS: 'keywords'
 };
 
 const reverseMap = utils.reverseMap(values);

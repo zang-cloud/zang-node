@@ -5,7 +5,7 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function UsagesConnector(configuration) {
+module.exports = function ApplicationsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -117,6 +117,7 @@ module.exports = function UsagesConnector(configuration) {
      */
     this.updateApplication = function (params) {
         let bodyParams = utils.prepareParams(params);
+        delete bodyParams.applicationSid;
         return http.request(config, {
             method: 'POST',
             accountSid: params.accountSid,

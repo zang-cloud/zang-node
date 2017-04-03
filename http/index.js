@@ -8,13 +8,13 @@ const api = {
     request: function (config, opts) {
         let qs = undefined;
         if (opts.queryParams) {
-            qs = _.mapKeys(opts.queryParams, (value, key) => changeCase.pascal(key));
+            qs = pascalCase(opts.queryParams);
         }
 
         let body = undefined;
         let bodyString = undefined;
         if (opts.bodyParams) {
-            body = _.mapKeys(opts.bodyParams, (value, key) => changeCase.pascal(key));
+            body = pascalCase(opts.bodyParams);
             bodyString = api.createBodyString(body);
         }
 
@@ -45,5 +45,18 @@ const api = {
         return bodyVals.join('&');
     }
 };
+
+function pascalCase(params) {
+    return _.mapKeys(params, (value, key) => {
+        let newKey = changeCase.pascal(key);
+        if (_.endsWith(key, '>')) {
+            newKey += '>';
+        }
+        if (_.endsWith(key, '<')) {
+            newKey += '<';
+        }
+        return newKey;
+    });
+}
 
 module.exports = api;

@@ -3,12 +3,13 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef HttpMethod
+ * @typedef PhoneNumberType
  * @enum {string}
  */
 const values = {
-    POST: 'POST',
-    GET: 'GET'
+    LOCAL: 'local',
+    INTERNATIONAL: 'international',
+    TOLL_FREE: 'toll-free'
 };
 
 const reverseMap = utils.reverseMap(values);

@@ -2,6 +2,7 @@
 const expectation = require('./expectation');
 const Product = require('../enums/products');
 const connectors = require('../connectors');
+
 const usagesConnector = new connectors.Factory({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'

@@ -10,7 +10,10 @@ module.exports.create = function(ctx){
     const test = ctx.title;
     const testdef = testdefs[suite][test];
     const response = require(`./resources${testdef.response}`);
-    const path = `/Accounts/TestAccountSid/${testdef.path}`;
+    let path = `/Accounts/TestAccountSid/${testdef.path}`;
+    if (testdef.path === 'Accounts') {
+        path = '/Accounts/TestAccountSid.json';
+    }
     return nock(conf.baseUrl, {
         reqheaders: {
             'authorization': 'Basic VGVzdEFjY291bnRTaWQ6VGVzdFRva2Vu'
@@ -29,3 +32,6 @@ function prepareParams (params) {
     params.forEach(param => ret[param.name] = param.value);
     return ret;
 }
+
+module.exports.fromDate = new Date(2016, 11, 12);
+module.exports.toDate = new Date(2017, 2, 19);

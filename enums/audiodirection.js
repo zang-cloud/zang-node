@@ -3,12 +3,12 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef HttpMethod
+ * @typedef AudioDirection
  * @enum {string}
  */
 const values = {
-    POST: 'POST',
-    GET: 'GET'
+    IN: 'in',
+    OUT: 'out'
 };
 
 const reverseMap = utils.reverseMap(values);

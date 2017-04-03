@@ -1,21 +1,41 @@
 'use strict';
 
-const usagesConnector = require('./usages-connector');
+const accountsConnector = require('./accounts-connector');
+const applicationClientsConnector = require('./applicationclients-connector');
 const applicationsConnector = require('./applications-connector');
+const availablePhoneNumbersConnector = require('./availablephonenumbers-connector');
+const callsConnector = require('./calls-connector');
+const usagesConnector = require('./usages-connector');
 
-const Factory = function Factory(configuration){
+const Factory = function Factory(configuration) {
     if (configuration) {
-        this.usages = new usagesConnector(configuration);
-        this.applications = new applicationsConnector(configuration);
+        this.accounts = new module.exports.Accounts(configuration);
+        this.applicationClients = new module.exports.ApplicationClients(configuration);
+        this.applications = new module.exports.Applications(configuration);
+        this.availablePhoneNumbers = new module.exports.AvailablePhoneNumbers(configuration);
+        this.calls = new module.exports.Calls(configuration);
+        this.usages = new module.exports.Usages(configuration);
     }
 };
 
 module.exports = {
     Factory: Factory,
-    Usages: function Usages(configuration){
-        return new usagesConnector(configuration);
+    Accounts: function Accounts(configuration) {
+        return new accountsConnector(configuration);
+    },
+    ApplicationClients: function ApplicationClients(configuration) {
+        return new applicationClientsConnector(configuration);
     },
     Applications: function Applications(configuration) {
         return new applicationsConnector(configuration);
+    },
+    AvailablePhoneNumbers: function AvailablePhoneNumbers(configuration) {
+        return new availablePhoneNumbersConnector(configuration);
+    },
+    Calls: function Calls(configuration) {
+        return new callsConnector(configuration);
+    },
+    Usages: function Usages(configuration) {
+        return new usagesConnector(configuration);
     }
 };
