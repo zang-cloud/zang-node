@@ -1,6 +1,6 @@
 'use strict';
 const expectation = require('./expectation');
-const PRODUCT = require('../enums/products');
+const Product = require('../enums/products');
 const connectors = require('../connectors');
 const usagesConnector = new connectors.Factory({
     accountSid: 'TestAccountSid',
@@ -18,7 +18,7 @@ describe('UsagesTest', function () {
                 year: 2016,
                 month: 12,
                 day: 12,
-                product: PRODUCT.OUTBOUND_SMS,
+                product: Product.OUTBOUND_SMS,
                 page: 0,
                 pageSize: 25
             }).then(data => {

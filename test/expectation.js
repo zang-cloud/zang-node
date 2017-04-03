@@ -2,6 +2,7 @@
 const nock = require('nock');
 const testdefs = require('./resources/unittests.json');
 const conf = require('../configuration').getConfiguration();
+const http = require('../http');
 
 module.exports.create = function(ctx){
     nock.cleanAll();
@@ -14,7 +15,7 @@ module.exports.create = function(ctx){
         reqheaders: {
             'authorization': 'Basic VGVzdEFjY291bnRTaWQ6VGVzdFRva2Vu'
         }
-    }).intercept(path, testdef.method, prepareParams(testdef.bodyParams))
+    }).intercept(path, testdef.method, http.createBodyString(prepareParams(testdef.bodyParams)))
         .query(prepareParams(testdef.queryParams))
         .replyWithFile(200, `${__dirname}/resources${testdef.response}`, {
             'Content-Type': 'application/json'

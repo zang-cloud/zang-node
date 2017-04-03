@@ -2,7 +2,7 @@
 
 /**
  * @readonly
- * @enum PRODUCT
+ * @enum Product
  */
 const values = {
     OUTBOUND_CALL: 1,
