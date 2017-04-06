@@ -5,7 +5,7 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function UsagesConnector(configuration) {
+module.exports = function TranscriptionsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
