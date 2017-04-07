@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * @module connectors
+ */
+
 const accountsConnector = require('./accounts-connector');
 const applicationClientsConnector = require('./applicationclients-connector');
 const applicationsConnector = require('./applications-connector');
