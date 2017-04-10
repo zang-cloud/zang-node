@@ -4,8 +4,6 @@
  * @module
  */
 
-const xml = require('xml');
-const _ = require('lodash');
 const utils = require('./xml-utils');
 
 /**
@@ -20,11 +18,11 @@ const utils = require('./xml-utils');
  * @returns {Object} XML element
  */
 module.exports = function createElement(params) {
-    const attributes = utils.prepareParams(params);
-    delete attributes.sipAddress;
-    return {
-        Sip: _.concat({_attr: attributes}, params.sipAddress)
-    }
+    return utils.createNode({
+        name: 'Sip',
+        contentParam: 'sipAddress',
+        data: params
+    });
 };
 
 

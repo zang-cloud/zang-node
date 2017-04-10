@@ -4,8 +4,6 @@
  * @module
  */
 
-const xml = require('xml');
-const _ = require('lodash');
 const utils = require('./xml-utils');
 
 /**
@@ -17,11 +15,11 @@ const utils = require('./xml-utils');
  * @returns {Object} XML element
  */
 module.exports = function createElement(params) {
-    const attributes = utils.prepareParams(params);
-    delete attributes.content;
-    return {
-        User: _.concat({_attr: attributes}, params.content)
-    }
+    return utils.createNode({
+        name: 'User',
+        contentParam: 'content',
+        data: params
+    });
 };
 
 

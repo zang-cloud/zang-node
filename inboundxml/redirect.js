@@ -4,8 +4,6 @@
  * @module
  */
 
-const xml = require('xml');
-const _ = require('lodash');
 const utils = require('./xml-utils');
 
 /**
@@ -16,11 +14,11 @@ const utils = require('./xml-utils');
  * @returns {Object} XML element
  */
 module.exports = function createElement(params) {
-    const attributes = utils.prepareParams(params);
-    delete attributes.url;
-    return {
-        Redirect: _.concat({_attr: attributes}, params.url)
-    }
+    return utils.createNode({
+        name: 'Redirect',
+        contentParam: 'url',
+        data: params
+    });
 };
 
 

@@ -4,14 +4,12 @@
  * @module
  */
 
-const xml = require('xml');
-const _ = require('lodash');
 const utils = require('./xml-utils');
 
 /**
  * Creates a Response element.
  * @param {Object} params XML Node parameters.
- * @param {Array<Object>} [params.content] Specify child elements of the Response element. Allowed elements are: Dial, Gather, GetSpeech, Hangup, Pause, Piong, Play, Record, Redirect, Reject, Say, Sms, PlayLastRecording
+ * @param {Object[]} [params.content] Specify child elements of the Response element. Allowed elements are: Dial, Gather, GetSpeech, Hangup, Pause, Piong, Play, Record, Redirect, Reject, Say, Sms, PlayLastRecording
  * @param {string} [params.statusCallback] Sets the status callback.
  * @param {HttpMethod} [params.statusMethod] Sets the status method.
  * @param {string} [params.heartbeatCallback] Sets the heartbeat callback.
@@ -19,12 +17,11 @@ const utils = require('./xml-utils');
  * @returns {Object} XML element
  */
 module.exports = function createElement(params) {
-    const attributes = utils.prepareParams(params);
-    delete attributes.content;
-
-    return {
-        Response: _.concat({_attr: attributes}, params.content)
-    }
+    return utils.createNode({
+        name: 'Response',
+        contentParam: 'content',
+        data: params
+    });
 };
 
 

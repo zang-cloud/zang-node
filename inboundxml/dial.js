@@ -4,19 +4,20 @@
  * @module
  */
 
-const xml = require('xml');
-const _ = require('lodash');
 const utils = require('./xml-utils');
 
 /**
  * Creates a Conference element.
  * @param {Object} params XML Node parameters.
- * @param {Array<Object>} [params.content] Specify child elements of the Dial element. Allowed elements are: Conference, Number, Sip
+ * @param {Object[]} [params.content] Specify child elements of the Dial element. Allowed elements are: Conference, Number, Sip
  * @param {string} [params.action] URL where some parameters specific to <Dial> will be sent for further processing. The calling party can be redirected here upon the hangup of the B leg caller.
  * @param {HttpMethod} [params.method=POST] Method used to request the action URL.
+ * @param {number} [params.timeout]
+ * @param {boolean} [params.hangupOnStar]
  * @param {string} [params.timeLimit=14400] The duration in seconds a call made through <Dial> should occur for before ending. Allowed Value: integer greater than or equal to 1.
  * @param {string} [params.callerId] Number to display as calling. Defaults to the ID of phone being used.
  * @param {boolean} [params.hideCallerId=false] Boolean value specifying if the caller ID should be hidden or not.
+ * @param {string} [params.callerName]
  * @param {string} [params.dialMusic] URL to an InboundXML document to be executed in place of the call ringtone (a <Say> or <Play> would be appropriate in this document).
  * @param {string} [params.callbackUrl] URL requested when the dialed call connects and ends. Note that this URL only receives parameters containing information about the call, the call does not execute XML given as a callbackUrl.
  * @param {HttpMethod} [params.callbackMethod=POST] Method used to request the callback URL.
@@ -38,12 +39,11 @@ const utils = require('./xml-utils');
  * @returns {Object} XML element
  */
 module.exports = function createElement(params) {
-    const attributes = utils.prepareParams(params);
-    delete attributes.content;
-
-    return {
-        Dial: _.concat({_attr: attributes}, params.content)
-    }
+    return utils.createNode({
+        name: 'Dial',
+        contentParam: 'content',
+        data: params
+    });
 };
 
 

@@ -4,7 +4,6 @@
  * @module
  */
 
-const xml = require('xml');
 const utils = require('./xml-utils');
 
 /**
@@ -26,14 +25,18 @@ const utils = require('./xml-utils');
  * @param {boolean} [params.record=false] Boolean value specifying if the conference should be recorded.
  * @param {RecordingFileFormat} [params.recordFileFormat=MP3] File format in which the recording will be saved in.
  * @param {string} [params.recordCallbackUrl] URL to sound that the recording will be sent to from the conference.
+ * @param {HttpMethod} [params.recordCallbackMethod]
+ * @param {HttpMethod} [params.waitMethod]
+ * @param {HttpMethod} [params.waitSoundMethod]
+ * @param {string} [params.waitUrl]
  * @returns {Object} XML element
  */
 module.exports = function createElement(params) {
-    const attributes = utils.prepareParams(params);
-    delete attributes.name;
-    return {
-        Conference: [{_attr: attributes}, params.name]
-    }
+    return utils.createNode({
+        name: 'Conference',
+        contentParam: 'name',
+        data: params
+    });
 };
 
 

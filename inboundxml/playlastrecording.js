@@ -4,16 +4,16 @@
  * @module
  */
 
-const xml = require('xml');
+const utils = require('./xml-utils');
 
 /**
  * Creates a PlayLastRecording element.
  * @returns {Object} XML element
  */
 module.exports = function createElement() {
-    return {
-        PlayLastRecording: {}
-    }
+    return utils.createNode({
+        name: 'PlayLastRecording'
+    });
 };
 
 

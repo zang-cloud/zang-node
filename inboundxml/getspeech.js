@@ -4,14 +4,12 @@
  * @module
  */
 
-const xml = require('xml');
-const _ = require('lodash');
 const utils = require('./xml-utils');
 
 /**
  * Creates a GetSpeech element.
  * @param {Object} params XML Node parameters.
- * @param {Array<Object>} [params.content] Specify child elements of the GetSpeech element. Allowed elements are: Say, Play, Pause, PlayLastRecording
+ * @param {Object[]} [params.content] Specify child elements of the GetSpeech element. Allowed elements are: Say, Play, Pause, PlayLastRecording
  * @param {string} [params.action]
  * @param {HttpMethod} [params.method]
  * @param {number} [params.timeout]
@@ -21,11 +19,11 @@ const utils = require('./xml-utils');
  * @returns {Object} XML element
  */
 module.exports = function createElement(params) {
-    const attributes = utils.prepareParams(params);
-    delete attributes.content;
-    return {
-        GetSpeech: _.concat({_attr: attributes}, params.content)
-    }
+    return utils.createNode({
+        name: 'GetSpeech',
+        contentParam: 'content',
+        data: params
+    });
 };
 
 
