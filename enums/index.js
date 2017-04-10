@@ -20,5 +20,10 @@ module.exports = {
     RecordingFileFormat: require('./recordingfileformat'),
     SmsDirection: require('./smsdirection'),
     TranscriptionQuality: require('./transcriptionquality'),
-    TranscriptionStatus: require('./transcriptionstatus')
+    TranscriptionStatus: require('./transcriptionstatus'),
+
+    Language: require('./language'),
+    RejectReason: require('./rejectreason'),
+    SamplingRate: require('./samplingrate'),
+    Voice: require('./voice')
 };

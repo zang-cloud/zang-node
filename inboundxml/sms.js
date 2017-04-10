@@ -1,0 +1,31 @@
+'use strict';
+
+/**
+ * @module
+ */
+
+const xml = require('xml');
+const _ = require('lodash');
+const utils = require('./xml-utils');
+
+/**
+ * Creates an Sms element.
+ * @param {Object} params XML Node parameters.
+ * @param {string} [params.text] Text to send in the SMS.
+ * @param {string} [params.to] The phone number that will receive the SMS message. If this parameter is not specified, the SMS will be sent back to the number that made the request to the Zang number’s SMS request URL.
+ * @param {string} [params.from] The number that will display as sending the SMS message. This should be one of your Zang numbers. If this parameter is not specified, the default from number is the Zang number hosting the SMS request URL.
+ * @param {string} [params.action] URL to direct Zang to once the <Sms> element is executed. Parameters specific to <Sms> are sent here along with the request.
+ * @param {HttpMethod} [params.method=POST] Method used to request the action URL. Default Value: POST.
+ * @param {string} [params.statusCallback] URL where the status of the SMS can be sent.
+ * @param {HttpMethod} [params.statusCallbackMethod]
+ * @returns {Object} XML element
+ */
+module.exports = function createElement(params) {
+    const attributes = utils.prepareParams(params);
+    delete attributes.text;
+    return {
+        Sms: _.concat({_attr: attributes}, params.text)
+    }
+};
+
+
