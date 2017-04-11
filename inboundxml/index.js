@@ -25,6 +25,27 @@ const sms = require('./sms');
 const user = require('./user');
 
 
+let schema = null;
+let xsd = null;
+try {
+    xsd = require('libxml-xsd');
+} catch (e) {
+    console.log('Warning: XSD validation library not installed (libxml-xsd). Skipping validation.')
+}
+
+function loadSchema() {
+    return new Promise((resolve, reject) => {
+        if (!xsd || schema) {
+            return resolve(true);
+        }
+        xsd.parseFile(__dirname + '/inboundxml.xsd', function(err, loadedSchema){
+            if (err) return reject(err);
+            schema = loadedSchema;
+            return resolve(schema);
+        });
+    });
+}
+
 module.exports = {
     /**
      * Creates XML from XML definition
@@ -32,7 +53,17 @@ module.exports = {
      * @returns {Object}
      */
     build: function (xmlDefinition) {
-        return xml(xmlDefinition, {indent: '  '});
+        const createdXml = xml(xmlDefinition, {indent: '  '});
+        return loadSchema().then(function(){
+            if (!schema) return createdXml;
+            const validationErrors = schema.validate(createdXml);
+            if (validationErrors) {
+                throw validationErrors.join(', ');
+            } else {
+                return createdXml;
+            }
+        });
+
     },
     /**
      * Creates Conference XML node

@@ -156,8 +156,7 @@ describe('SimpleInboundXmlTest', function () {
                 })
             ]
         });
-        let xml = ix.build(xmlDefinition);
-        console.log(xml);
+        ix.build(xmlDefinition).then(xml => console.log(xml));
     });
 
 });
