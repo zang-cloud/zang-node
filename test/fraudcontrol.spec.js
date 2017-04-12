@@ -6,7 +6,7 @@ const enums = require('../enums');
 const connector = new connectors.Factory({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
-}).fraudControlConnector;
+}).fraudControl;
 
 describe('FraudControlTest', function () {
     beforeEach(function () {

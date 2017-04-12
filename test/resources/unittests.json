@@ -1099,10 +1099,6 @@
       "path": "Calls/TestCallSid/Recordings.json",
       "bodyParams": [
         {
-          "name": "",
-          "value": ""
-        },
-        {
           "name": "Record",
           "value": "true"
         },
@@ -1564,7 +1560,11 @@
         },
         {
           "name": "Body",
-          "value": "test from java"
+          "value": "test from node"
+        },
+        {
+          "name": "StatusCallback",
+          "value": "callback.url"
         },
         {
           "name": "StatusCallbackMethod",
@@ -1572,7 +1572,7 @@
         },
         {
           "name": "AllowMultiple",
-          "value": "False"
+          "value": "false"
         }
       ],
       "queryParams": null,

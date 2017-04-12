@@ -16,6 +16,7 @@ module.exports = function ApplicationsConnector(configuration) {
      * @returns {Promise} Information about the application
      */
     this.viewApplication = function (params) {
+        params = params || {};
         return http.request(config, {
             accountSid: params.accountSid,
             path: `/Applications/${params.applicationSid}.json`
@@ -32,6 +33,7 @@ module.exports = function ApplicationsConnector(configuration) {
      * @returns {Promise} A list of available applications
      */
     this.listApplications = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             accountSid: params.accountSid,
@@ -73,6 +75,7 @@ module.exports = function ApplicationsConnector(configuration) {
      * @return {Promise} The created Application
      */
     this.createApplication = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'POST',
@@ -116,6 +119,7 @@ module.exports = function ApplicationsConnector(configuration) {
      * @returns {Promise} The created Application
      */
     this.updateApplication = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.applicationSid;
         return http.request(config, {
@@ -134,6 +138,7 @@ module.exports = function ApplicationsConnector(configuration) {
      * @returns {Promise} Information about the application
      */
     this.deleteApplication = function (params) {
+        params = params || {};
         return http.request(config, {
             method: 'DELETE',
             accountSid: params.accountSid,

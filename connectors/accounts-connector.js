@@ -15,7 +15,7 @@ module.exports = function AccountsConnector(configuration) {
      * @returns {Promise} Account object
      */
     this.viewAccount = function (params) {
-
+        params = params || {};
         return http.request(config, {
             accountSid: params.accountSid,
             path: `.json`
@@ -30,6 +30,7 @@ module.exports = function AccountsConnector(configuration) {
      * @return {Promise} Updated account
      */
     this.updateAccount = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'POST',

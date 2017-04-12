@@ -17,6 +17,7 @@ module.exports = function ApplicationClientsConnector(configuration) {
      * @return {Promise} Information about the Application Client
      */
     this.viewApplicationClient = function (params) {
+        params = params || {};
         return http.request(config, {
             accountSid: params.accountSid,
             path: `/Applications/${params.applicationSid}/Clients/${params.clientSid}.json`
@@ -30,6 +31,7 @@ module.exports = function ApplicationClientsConnector(configuration) {
      * @return {Promise} List of available Application Clients
      */
     this.listApplicationClients = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         delete queryParams.applicationSid;
         return http.request(config, {
@@ -49,6 +51,7 @@ module.exports = function ApplicationClientsConnector(configuration) {
      * @throws ZangException
      */
     this.createApplicationClient = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.applicationSid;
         return http.request(config, {

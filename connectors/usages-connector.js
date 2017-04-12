@@ -16,6 +16,7 @@ module.exports = function UsagesConnector(configuration) {
      * @returns {Promise} Information about the Usage.
      */
     this.viewUsage = function (params) {
+        params = params || {};
         return http.request(config, {
             accountSid: params.accountSid,
             path: `/Usages/${params.usageSid}.json`
@@ -36,6 +37,7 @@ module.exports = function UsagesConnector(configuration) {
      * @returns {Promise} A list of Usages.
      */
     this.listUsages = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             accountSid: params.accountSid,

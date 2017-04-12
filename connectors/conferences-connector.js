@@ -16,6 +16,7 @@ module.exports = function ConferencesConnector(configuration) {
      * @returns {Promise} Information about the Conference.
      */
     this.viewConference = function (params) {
+        params = params || {};
         return http.request(config, {
             accountSid: params.accountSid,
             path: `/Conferences/${params.conferenceSid}.json`
@@ -38,6 +39,7 @@ module.exports = function ConferencesConnector(configuration) {
      * @returns {Promise} List of Conferences.
      */
     this.listConferences = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             accountSid: params.accountSid,
@@ -55,6 +57,7 @@ module.exports = function ConferencesConnector(configuration) {
      * @returns {Promise} Information about a Participant.
      */
     this.viewParticipant = function(params) {
+        params = params || {};
         return http.request(config, {
             accountSid: params.accountSid,
             path: `/Conferences/${params.conferenceSid}/Participants/${params.participantSid}.json`
@@ -73,6 +76,7 @@ module.exports = function ConferencesConnector(configuration) {
      * @returns {Promise} List of Participants.
      */
     this.listParticipants = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         delete queryParams.conferenceSid;
         return http.request(config, {
@@ -93,6 +97,7 @@ module.exports = function ConferencesConnector(configuration) {
      * @returns {Promise} Participant in question.
      */
     this.deafOrMuteParticipant = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.conferenceSid;
         delete bodyParams.participantSid;
@@ -113,6 +118,7 @@ module.exports = function ConferencesConnector(configuration) {
      * @returns {Promise} Participant in question.
      */
     this.hangupParticipant = function (params) {
+        params = params || {};
         return http.request(config, {
             method: 'DELETE',
             accountSid: params.accountSid,
@@ -130,6 +136,7 @@ module.exports = function ConferencesConnector(configuration) {
      * @returns {Promise} Participant in question.
      */
     this.playAudioToParticipant = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.conferenceSid;
         delete bodyParams.participantSid;

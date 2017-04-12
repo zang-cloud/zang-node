@@ -16,6 +16,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} Information about a call.
      */
     this.viewCall = function (params) {
+        params = params || {};
         return http.request(config, {
             method: 'GET',
             accountSid: params.accountSid,
@@ -37,6 +38,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} List of calls
      */
     this.listCalls = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'GET',
@@ -105,6 +107,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} Information about the created Call
      */
     this.makeCall = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'POST',
@@ -126,6 +129,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} The Call to which new instructions are sent to.
      */
     this.interruptLiveCall = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.callSid;
         return http.request(config, {
@@ -150,6 +154,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} The Call to which digits are sent to.
      */
     this.sendDigitsToLiveCall = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.callSid;
         return http.request(config, {
@@ -185,6 +190,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} The Call for which recording is requested.
      */
     this.recordLiveCall = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.callSid;
         return http.request(config, {
@@ -209,6 +215,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} The Call live audio is played to.
      */
     this.playAudioToLiveCall = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.callSid;
         return http.request(config, {
@@ -238,6 +245,7 @@ module.exports = function CallsConnector(configuration) {
      * @returns {Promise} The call voice effects are applied to.
      */
     this.applyVoiceEffect = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.callSid;
         return http.request(config, {

@@ -16,6 +16,7 @@ module.exports = function CarrierServicesConnector(configuration) {
      * @returns {Promise} List of carrier lookup data.
      */
     this.carrierLookup = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'POST',
@@ -34,6 +35,7 @@ module.exports = function CarrierServicesConnector(configuration) {
      * @returns {Promise} List of carrier lookup data.
      */
     this.listCarrierLookups = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'GET',
@@ -52,6 +54,7 @@ module.exports = function CarrierServicesConnector(configuration) {
      * @returns {Promise} List of CNAM lookup data.
      */
     this.cnamLookup = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'POST',
@@ -70,6 +73,7 @@ module.exports = function CarrierServicesConnector(configuration) {
      * @returns {Promise} List of CNAM lookup data.
      */
     this.listCnamLookups = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'GET',
@@ -87,6 +91,7 @@ module.exports = function CarrierServicesConnector(configuration) {
      * @returns {Promise} List of BNA lookup data.
      */
     this.bnaLookup = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'POST',
@@ -105,6 +110,7 @@ module.exports = function CarrierServicesConnector(configuration) {
      * @returns {Promise} List of BNA lookup data.
      */
     this.listBnaLookups = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'GET',

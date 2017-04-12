@@ -16,6 +16,7 @@ module.exports = function TranscriptionsConnector(configuration) {
      * @returns {Promise} The requested Transcription.
      */
     this.viewTranscription = function (params) {
+        params = params || {};
         return http.request(config, {
             accountSid: params.accountSid,
             path: `/Transcriptions/${params.transcriptionSid}.json`
@@ -35,6 +36,7 @@ module.exports = function TranscriptionsConnector(configuration) {
      * @returns {Promise} A list of Transcriptions.
      */
     this.listTranscriptions = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             accountSid: params.accountSid,
@@ -63,6 +65,7 @@ module.exports = function TranscriptionsConnector(configuration) {
      * @returns {Promise} Information about the Transcription.
      */
     this.transcribeRecording = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.recordingSid;
         return http.request(config, {
@@ -93,6 +96,7 @@ module.exports = function TranscriptionsConnector(configuration) {
      * @returns {Promise} Information about the Transcription.
      */
     this.transcribeAudioUrl = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'POST',

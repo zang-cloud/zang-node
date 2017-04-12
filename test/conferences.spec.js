@@ -6,7 +6,7 @@ const enums = require('../enums');
 const connector = new connectors.Factory({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
-}).conferencesConnector;
+}).conferences;
 
 describe('ConferencesTest', function () {
     beforeEach(function () {

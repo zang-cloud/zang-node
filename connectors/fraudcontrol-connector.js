@@ -21,6 +21,7 @@ module.exports = function FraudControlConnector(configuration) {
      * @returns {Promise} The created Fraud control rule
      */
     this.blockDestination = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.countryCode;
         return http.request(config, {
@@ -44,6 +45,7 @@ module.exports = function FraudControlConnector(configuration) {
      * @returns {Promise} The created Fraud control rule
      */
     this.authorizeDestination = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.countryCode;
         return http.request(config, {
@@ -62,6 +64,7 @@ module.exports = function FraudControlConnector(configuration) {
      * @returns {Promise} The created Fraud control rule
      */
     this.extendDestinationAuthorization = function (params) {
+        params = params || {};
         return http.request(config, {
             method: 'POST',
             accountSid: params.accountSid,
@@ -82,6 +85,7 @@ module.exports = function FraudControlConnector(configuration) {
      * @returns {Promise} The created Fraud control rule
      */
     this.whitelistDestination = function (params) {
+        params = params || {};
         let bodyParams = utils.prepareParams(params);
         delete bodyParams.countryCode;
         return http.request(config, {
@@ -101,6 +105,7 @@ module.exports = function FraudControlConnector(configuration) {
      * @returns {Promise} List of Fraud Control rules.
      */
     this.listFraudControlResources = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         return http.request(config, {
             accountSid: params.accountSid,

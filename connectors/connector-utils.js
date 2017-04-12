@@ -4,7 +4,7 @@ const moment = require('moment');
 
 module.exports = {
     prepareParams: function (params) {
-        if (!params) return null;
+        if (!params) return {};
         let toDelete = ['accountSid'];
         let ret = _.clone(params);
         _.forEach(ret, function (value, key) {
@@ -19,6 +19,9 @@ module.exports = {
                 } else {
                     ret[key] = formattedDate;
                 }
+            }
+            if (value === undefined || value === null) {
+                toDelete.push(key);
             }
         });
         toDelete.forEach(prop => delete ret[prop]);

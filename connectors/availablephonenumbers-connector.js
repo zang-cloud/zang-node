@@ -22,6 +22,7 @@ module.exports = function AvailablePhoneNumbersConnector(configuration) {
      * @return {Promise} List of phone numbers available for purchasing
      */
     this.listAvailablePhoneNumbers = function (params) {
+        params = params || {};
         let queryParams = utils.prepareParams(params);
         delete queryParams.type;
         delete queryParams.country;
