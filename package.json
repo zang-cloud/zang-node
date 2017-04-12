@@ -4,8 +4,8 @@
   "description": "Node.js helper library for Zang",
   "author": "Vladimir Prenner <vladimir.prenner@calyx.hr>",
   "scripts": {
-    "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- -R spec",
-    "testl": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- -R spec"
+    "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- **/*.spec.js -R spec",
+    "testl": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- **/*.spec.js -R spec"
   },
   "main": "index.js",
   "devDependencies": {
