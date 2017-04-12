@@ -32,6 +32,21 @@ const api = {
         };
         return rp(requestParameters).then(function(data){
             return JSON.parse(data);
+        }).catch(function(err){
+            let errorData = null;
+            if (err.error) {
+                try{
+                    errorData = JSON.parse(err.error);
+                    errorData.innerException = err;
+                } catch (e) {
+                    errorData = null;
+                }
+            }
+            if (errorData) {
+                throw errorData;
+            } else {
+                throw err;
+            }
         });
     },
     createBodyString: function(body) {

@@ -14,7 +14,7 @@ describe('SipAclTest', function () {
     });
 
     describe('viewIpAcl', function () {
-        it('should return $$THING$$', function () {
+        it('should return ip access control list', function () {
             return connector.viewIpAccessControlList({
                 ipAccessControlListSid: 'TestIpAccessControlListSid'
             }).then(data => {
@@ -25,7 +25,7 @@ describe('SipAclTest', function () {
     });
 
     describe('listIpAcls', function () {
-        it('should return $$THING$$', function () {
+        it('should return a list of ip access control lists', function () {
             return connector.listIpAccessControlLists({
                 page: 0,
                 pageSize: 50
@@ -37,7 +37,7 @@ describe('SipAclTest', function () {
     });
 
     describe('createIpAcl', function () {
-        it('should return $$THING$$', function () {
+        it('should return ip access control list', function () {
             return connector.createIpAccessControlList({
                 friendlyName: 'MyIpAclList'
             }).then(data => {
@@ -48,7 +48,7 @@ describe('SipAclTest', function () {
     });
 
     describe('updateIpAcl', function () {
-        it('should return $$THING$$', function () {
+        it('should return ip access control list', function () {
             return connector.updateIpAccessControlList({
                 ipAccessControlListSid: 'TestIpAccessControlListSid',
                 friendlyName: 'NewIpAclList'
@@ -60,7 +60,7 @@ describe('SipAclTest', function () {
     });
 
     describe('deleteIpAcl', function () {
-        it('should return $$THING$$', function () {
+        it('should return ip access control list', function () {
             return connector.deleteIpAccessControlList({
                 ipAccessControlListSid: 'TestIpAccessControlListSid'
             }).then(data => {
@@ -71,7 +71,7 @@ describe('SipAclTest', function () {
     });
 
     describe('viewAclIp', function () {
-        it('should return $$THING$$', function () {
+        it('should return acl ip address', function () {
             return connector.viewAccessControlListIp({
                 ipAccessControlListSid: 'TestIpAccessControlListSid',
                 ipSid: 'TestIpAddressSid'
@@ -83,7 +83,7 @@ describe('SipAclTest', function () {
     });
 
     describe('listAclIps', function () {
-        it('should return $$THING$$', function () {
+        it('should return a list of acl ip addresses', function () {
             return connector.listAccessControlListIps({
                 ipAccessControlListSid: 'TestIpAccessControlListSid'
             }).then(data => {
@@ -94,7 +94,7 @@ describe('SipAclTest', function () {
     });
 
     describe('addAclIp', function () {
-        it('should return $$THING$$', function () {
+        it('should return acl ip address', function () {
             return connector.addAccessControlListIp({
                 ipAccessControlListSid: 'TestIpAccessControlListSid',
                 friendlyName: 'MyIpAddress',
@@ -107,7 +107,7 @@ describe('SipAclTest', function () {
     });
 
     describe('updateAclIp', function () {
-        it('should return $$THING$$', function () {
+        it('should return acl ip address', function () {
             return connector.updateAccessControlListIp({
                 ipAccessControlListSid: 'TestIpAccessControlListSid',
                 ipSid: 'TestIpAddressSid',
@@ -121,7 +121,7 @@ describe('SipAclTest', function () {
     });
 
     describe('deleteAclIp', function () {
-        it('should return $$THING$$', function () {
+        it('should return acl ip address', function () {
             return connector.deleteAccessControlListIp({
                 ipAccessControlListSid: 'TestIpAccessControlListSid',
                 ipSid: 'TestIpAddressSid'
