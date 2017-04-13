@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function SipCredentialsConnector(configuration) {
+/**
+ * Creates a new Sip Credentials connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function SipCredentialsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -185,6 +190,6 @@ module.exports = function SipCredentialsConnector(configuration) {
             path: `/SIP/CredentialLists/${params.credentialsListSid}/Credentials/${params.credentialSid}.json`
         });
     };
+}
 
-    return this;
-};
+module.exports = SipCredentialsConnector;

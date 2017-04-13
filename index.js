@@ -5,17 +5,24 @@
  * @module zang-node
  */
 
-module.exports = {
+/**
+ * Connectors helper
+ * @type {Connectors}
+ */
+const Connectors = require('./connectors');
 
-    /**
-     * Connectors helper
-     * @see module:connectors
-     */
-    connectors: require('./connectors'),
-    /**
-     * InboundXml helper
-      @see module:inboundxml
-     */
-    inboundXml: require('./inboundxml')
-};
+/**
+ * InboundXml helper
+ * @see module:zang-node/inboundxml
+ */
+const inboundXml = require('./inboundxml');
 
+/**
+ * Enums
+ * @see module:zang-node/enums
+ */
+const enums = require('./enums');
+
+module.exports.Connectors = Connectors;
+module.exports.inboundXml = inboundXml;
+module.exports.enums = enums;

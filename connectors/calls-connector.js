@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function CallsConnector(configuration) {
+/**
+ * Creates a new Calls connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function CallsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -255,6 +260,6 @@ module.exports = function CallsConnector(configuration) {
             bodyParams
         });
     };
+}
 
-    return this;
-};
+module.exports = CallsConnector;

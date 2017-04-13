@@ -1,7 +1,4 @@
 'use strict';
-/**
- * @module
- */
 
 const _ = require('lodash');
 

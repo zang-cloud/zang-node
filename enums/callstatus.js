@@ -3,10 +3,9 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef CallStatus
  * @enum {string}
  */
-const values = {
+const CallStatus = {
     QUEUED: 'queued',
     RINGING: 'ringing',
     IN_PROGRESS: 'in-progress',
@@ -16,10 +15,10 @@ const values = {
     NO_ANSWER: 'no-answer'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(CallStatus);
 
-values.forValue = function(value) {
+CallStatus.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = CallStatus;

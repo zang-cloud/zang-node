@@ -1,9 +1,9 @@
 'use strict';
 const expectation = require('./expectation');
 const enums = require('../enums');
-const connectors = require('../connectors');
+const Connectors = require('../connectors');
 
-const transcriptionsConnector = new connectors.Factory({
+const transcriptionsConnector = new Connectors({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
 }).transcriptions;

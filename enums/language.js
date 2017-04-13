@@ -3,10 +3,9 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef Language
  * @enum {string}
  */
-const values = {
+const Language = {
     EN: 'en',
     EN_GB: 'en-gb',
     ES: 'es',
@@ -15,10 +14,10 @@ const values = {
     DE: 'de'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(Language);
 
-values.forValue = function (value) {
+Language.forValue = function (value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = Language;

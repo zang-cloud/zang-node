@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function CarrierServicesConnector(configuration) {
+/**
+ * Creates a new Carrier Services connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function CarrierServicesConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -119,7 +124,6 @@ module.exports = function CarrierServicesConnector(configuration) {
             queryParams
         });
     };
+}
 
-
-    return this;
-};
+module.exports = CarrierServicesConnector;

@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function ConferencesConnector(configuration) {
+/**
+ * Creates a new Conferences connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function ConferencesConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -147,6 +152,6 @@ module.exports = function ConferencesConnector(configuration) {
             bodyParams
         });
     };
+}
 
-    return this;
-};
+module.exports = ConferencesConnector;

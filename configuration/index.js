@@ -1,5 +1,12 @@
 'use strict';
 
+/**
+ * @typedef {Object} ZangConfiguration
+ * @property {string} [baseUrl='https://api.zang.io/v2'] Zang API base URL
+ * @property {string} accountSid Your Account SID.
+ * @property {string} authToken Your Auth Token.
+ */
+
 const _ = require('lodash');
 
 const defaultConfiguration = {

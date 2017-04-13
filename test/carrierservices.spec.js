@@ -1,8 +1,8 @@
 'use strict';
 const expectation = require('./expectation');
-const connectors = require('../connectors');
+const Connectors = require('../connectors');
 
-const carrierServicesConnector = new connectors.Factory({
+const carrierServicesConnector = new Connectors({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
 }).carrierservices;

@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function TranscriptionsConnector(configuration) {
+/**
+ * Creates a new Transcriptions connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function TranscriptionsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -105,6 +110,6 @@ module.exports = function TranscriptionsConnector(configuration) {
             bodyParams
         });
     };
+}
 
-    return this;
-};
+module.exports = TranscriptionsConnector;

@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef CallDirection
  * @enum {string}
  */
-const values = {
+const CallDirection = {
     INBOUND: 'inbound',
     OUTBOUND_API: 'outbound-api',
     OUTBOUND_DIAL: 'outbound-dial'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(CallDirection);
 
-values.forValue = function(value) {
+CallDirection.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = CallDirection;

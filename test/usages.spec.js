@@ -1,12 +1,12 @@
 'use strict';
 const expectation = require('./expectation');
 const Product = require('../enums/products');
-const connectors = require('../connectors');
+const Connectors = require('../connectors');
 
-const usagesConnector = new connectors.Factory({
+const usagesConnector = new Connectors.Usages({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
-}).usages;
+});
 
 describe('UsagesTest', function () {
     beforeEach(function () {

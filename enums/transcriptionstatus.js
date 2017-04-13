@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef TranscriptionStatus
  * @enum {string}
  */
-const values = {
+const TranscriptionStatus = {
     COMPLETED: 'completed',
     IN_PROGRESS: 'in-progress',
     FAILED: 'failed'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(TranscriptionStatus);
 
-values.forValue = function(value) {
+TranscriptionStatus.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = TranscriptionStatus;

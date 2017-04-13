@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function FraudControlConnector(configuration) {
+/**
+ * Creates a new Fraud Control connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function FraudControlConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -113,6 +118,6 @@ module.exports = function FraudControlConnector(configuration) {
             queryParams
         });
     };
+}
 
-    return this;
-};
+module.exports = FraudControlConnector;

@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function AvailablePhoneNumbersConnector(configuration) {
+/**
+ * Creates a new Avilable Phone Numbers connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function AvailablePhoneNumbersConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -32,6 +37,6 @@ module.exports = function AvailablePhoneNumbersConnector(configuration) {
             queryParams
         });
     };
+}
 
-    return this;
-};
+module.exports = AvailablePhoneNumbersConnector;

@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef PhoneNumberType
  * @enum {string}
  */
-const values = {
+const PhoneNumberType = {
     LOCAL: 'local',
     INTERNATIONAL: 'international',
     TOLL_FREE: 'toll-free'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(PhoneNumberType);
 
-values.forValue = function(value) {
+PhoneNumberType.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = PhoneNumberType;

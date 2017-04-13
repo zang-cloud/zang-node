@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function RecordingsConnector(configuration) {
+/**
+ * Creates a new Recordings connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function RecordingsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -97,6 +102,6 @@ module.exports = function RecordingsConnector(configuration) {
             path: `/Recordings/${params.recordingSid}.json`
         });
     };
+}
 
-    return this;
-};
+module.exports = RecordingsConnector;

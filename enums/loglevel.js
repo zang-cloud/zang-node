@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef LogLevel
  * @enum {string}
  */
-const values = {
+const LogLevel = {
     ERROR: '0',
     WARNING: '1',
     INFO: '2'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(LogLevel);
 
-values.forValue = function(value) {
+LogLevel.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = LogLevel;

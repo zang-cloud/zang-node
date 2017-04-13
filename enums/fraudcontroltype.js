@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef FraudControlType
  * @enum {string}
  */
-const values = {
+const FraudControlType = {
     BLOCKED: 'BLOCKED',
     AUTHORIZED: 'AUTHORIZED',
     WHITELISTED: 'WHITELISTED'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(FraudControlType);
 
-values.forValue = function(value) {
+FraudControlType.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = FraudControlType;

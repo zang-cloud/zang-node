@@ -3,18 +3,17 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef AudioDirection
  * @enum {string}
  */
-const values = {
+const AudioDirection = {
     IN: 'in',
     OUT: 'out'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(AudioDirection);
 
-values.forValue = function(value) {
+AudioDirection.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = AudioDirection;

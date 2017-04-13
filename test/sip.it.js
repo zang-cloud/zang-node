@@ -1,8 +1,8 @@
 'use strict';
-const connectors = require('../connectors');
+const Connectors = require('../connectors');
 const expect = require('chai').expect;
 
-const cf = new connectors.Factory({
+const cf = new Connectors({
     accountSid: '{AccountSid}',
     authToken: '{AuthToken}'
 });

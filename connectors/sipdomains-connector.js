@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function SipDomainsConnector(configuration) {
+/**
+ * Creates a new Sip Domains connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function SipDomainsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -215,6 +220,6 @@ module.exports = function SipDomainsConnector(configuration) {
             path: `/SIP/Domains/${params.domainSid}/IpAccessControlListMappings/${params.accessControlListSid}.json`
         });
     };
+}
 
-    return this;
-};
+module.exports = SipDomainsConnector;

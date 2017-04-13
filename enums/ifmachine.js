@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef IfMachine
  * @enum {string}
  */
-const values = {
+const IfMachine = {
     CONTINUE: 'continue',
     REDIRECT: 'redirect',
     HANGUP: 'hangup'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(IfMachine);
 
-values.forValue = function(value) {
+IfMachine.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = IfMachine;

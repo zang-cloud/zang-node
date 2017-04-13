@@ -1,6 +1,11 @@
 'use strict';
 
+/**
+ * @module zang-node/enums
+ */
+
 module.exports = {
+    /** @type {AnsweredBy} */
     AnsweredBy: require('./answeredby'),
     AudioDirection: require('./audiodirection'),
     AuthType: require('./authtype'),

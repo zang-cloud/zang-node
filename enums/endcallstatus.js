@@ -3,18 +3,17 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef EndCallStatus
  * @enum {string}
  */
-const values = {
+const EndCallStatus = {
     CANCELED: 'canceled',
     COMPLETED: 'completed'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(EndCallStatus);
 
-values.forValue = function(value) {
+EndCallStatus.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = EndCallStatus;

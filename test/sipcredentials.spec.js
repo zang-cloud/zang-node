@@ -1,9 +1,9 @@
 'use strict';
 const expectation = require('./expectation');
-const connectors = require('../connectors');
+const Connectors = require('../connectors');
 const enums = require('../enums');
 
-const connector = new connectors.Factory({
+const connector = new Connectors({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
 }).sipCredentials;

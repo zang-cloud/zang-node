@@ -3,18 +3,17 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef RecordingFileFormat
  * @enum {string}
  */
-const values = {
+const RecordingFileFormat = {
     MP3: 'mp3',
     WAV: 'wav'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(RecordingFileFormat);
 
-values.forValue = function(value) {
+RecordingFileFormat.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = RecordingFileFormat;

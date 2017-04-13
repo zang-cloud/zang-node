@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef ConferenceStatus
  * @enum {string}
  */
-const values = {
+const ConferenceStatus = {
     INIT: 'init',
     IN_PROGRESS: 'in-progress',
     COMPLETED: 'completed'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(ConferenceStatus);
 
-values.forValue = function(value) {
+ConferenceStatus.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = ConferenceStatus;

@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef AnsweredBy
  * @enum {string}
  */
-const values = {
+const AnsweredBy = {
     HUMAN: 'human',
     MACHINE: 'machine',
     TBD: 'tbd'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(AnsweredBy);
 
-values.forValue = function(value) {
+AnsweredBy.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = AnsweredBy;

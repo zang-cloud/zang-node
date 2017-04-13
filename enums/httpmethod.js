@@ -3,18 +3,17 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef HttpMethod
  * @enum {string}
  */
-const values = {
+const HttpMethod = {
     POST: 'POST',
     GET: 'GET'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(HttpMethod);
 
-values.forValue = function(value) {
+HttpMethod.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = HttpMethod;

@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function NotificationsConnector(configuration) {
+/**
+ * Creates a new Notifications connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function NotificationsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -43,6 +48,6 @@ module.exports = function NotificationsConnector(configuration) {
             queryParams
         });
     };
+}
 
-    return this;
-};
+module.exports = NotificationsConnector;

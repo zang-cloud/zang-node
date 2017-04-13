@@ -3,18 +3,17 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef Voice
  * @enum {string}
  */
-const values = {
+const Voice = {
     FEMALE: 'female',
     MALE: 'male'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(Voice);
 
-values.forValue = function (value) {
+Voice.forValue = function (value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = Voice;

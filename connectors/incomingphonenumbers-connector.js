@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function IncomingPhoneNumbersConnector(configuration) {
+/**
+ * Creates a new Incoming Phone Numbers connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function IncomingPhoneNumbersConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -153,6 +158,6 @@ module.exports = function IncomingPhoneNumbersConnector(configuration) {
             path: `/IncomingPhoneNumbers/${params.incomingPhoneNumberSid}.json`
         });
     };
+}
 
-    return this;
-};
+module.exports = IncomingPhoneNumbersConnector;

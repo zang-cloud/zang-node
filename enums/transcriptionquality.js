@@ -3,19 +3,18 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef TranscriptionQuality
  * @enum {string}
  */
-const values = {
+const TranscriptionQuality = {
     AUTO: 'auto',
     HYBRID: 'hybrid',
     KEYWORDS: 'keywords'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(TranscriptionQuality);
 
-values.forValue = function(value) {
+TranscriptionQuality.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = TranscriptionQuality;

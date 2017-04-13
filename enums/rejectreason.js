@@ -3,18 +3,17 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef RejectReason
  * @enum {string}
  */
-const values = {
+const RejectReason = {
     BUSY: 'busy',
     REJECTED: 'rejected'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(RejectReason);
 
-values.forValue = function (value) {
+RejectReason.forValue = function (value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = RejectReason;

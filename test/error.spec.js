@@ -1,10 +1,10 @@
 'use strict';
 const nock = require('nock');
 const conf = require('../configuration').getConfiguration();
-const connectors = require('../connectors');
+const Connectors = require('../connectors');
 const enums = require('../enums');
 
-const connector = new connectors.Factory({
+const connector = new Connectors({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
 }).fraudControl;

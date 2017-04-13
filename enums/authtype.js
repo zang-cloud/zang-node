@@ -3,18 +3,17 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef AuthType
  * @enum {string}
  */
-const values = {
+const AuthType = {
     IP_ACL: 'IP_ACL',
     CREDENTIAL_LIST: 'CREDENTIAL_LIST'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(AuthType);
 
-values.forValue = function(value) {
+AuthType.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = AuthType;

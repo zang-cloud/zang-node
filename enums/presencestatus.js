@@ -3,20 +3,19 @@ const utils = require('./enum-utils');
 
 /**
  * @readonly
- * @typedef PresenceStatus
  * @enum {string}
  */
-const values = {
+const PresenceStatus = {
     INIT: 'init',
     IDLE: 'idle',
     LOGGED_IN: 'loggedin',
     LOGGED_OUT: 'loggedout'
 };
 
-const reverseMap = utils.reverseMap(values);
+const reverseMap = utils.reverseMap(PresenceStatus);
 
-values.forValue = function(value) {
+PresenceStatus.forValue = function(value) {
     return reverseMap[value];
 };
 
-module.exports = values;
+module.exports = PresenceStatus;

@@ -5,7 +5,12 @@ const _ = require('lodash');
 const http = require('../http');
 const utils = require('./connector-utils');
 
-module.exports = function SmsConnector(configuration) {
+/**
+ * Creates a new SMS connector.
+ * @param {ZangConfiguration} configuration connector configuration parameters
+ * @constructor
+ */
+function SmsConnector(configuration) {
     const config = basicConfiguration.getConfiguration(_.cloneDeep(configuration));
 
     /**
@@ -69,6 +74,6 @@ module.exports = function SmsConnector(configuration) {
             bodyParams
         });
     };
+}
 
-    return this;
-};
+module.exports = SmsConnector;

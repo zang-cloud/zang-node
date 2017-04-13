@@ -1,7 +1,7 @@
 'use strict';
 const expectation = require('./expectation');
-const connectors = require('../connectors');
-const connector = new connectors.Factory({
+const Connectors = require('../connectors');
+const connector = new Connectors({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
 }).applications;
