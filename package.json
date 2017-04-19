@@ -6,12 +6,13 @@
   "scripts": {
     "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- **/*.spec.js -R spec",
     "testl": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- **/*.spec.js -R spec",
-    "jsdoc": "jsdoc -c conf.json -r ."
+    "jsdoc": "./node_modules/,bin/jsdoc -c conf.json -r ."
   },
   "main": "index.js",
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
+    "jsdoc": "^3.4.3",
     "mocha": "~3.2.0",
     "nock": "^9.0.11"
   },

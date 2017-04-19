@@ -1,9 +1,9 @@
 'use strict';
 const expectation = require('./expectation');
 const Product = require('../enums/products');
-const Connectors = require('../connectors');
+const UsagesConnector = require('../connectors/usages-connector');
 
-const usagesConnector = new Connectors.Usages({
+const usagesConnector = new UsagesConnector({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
 });

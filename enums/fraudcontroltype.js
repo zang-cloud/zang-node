@@ -1,4 +1,9 @@
 'use strict';
+
+/**
+ * @module zang-node/enums/fraudcontroltype
+ */
+
 const utils = require('./enum-utils');
 
 /**

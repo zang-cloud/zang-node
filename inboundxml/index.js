@@ -1,8 +1,9 @@
 'use strict';
 
 /**
- * @module inboundxml
+ * @module zang-node/inboundxml
  */
+
 
 const xml = require('xml');
 const conference = require('./conference');
@@ -67,92 +68,92 @@ module.exports = {
     },
     /**
      * Creates Conference XML node
-     * @see module:inboundxml/conference
+     * @see module:zang-node/inboundxml/conference
      */
     conference,
     /**
      * Creates Dial XML node
-     * @see module:inboundxml/dial
+     * @see module:zang-node/inboundxml/dial
      */
     dial,
     /**
      * Creates Gather XML node
-     * @see module:inboundxml/gather
+     * @see module:zang-node/inboundxml/gather
      */
     gather,
     /**
      * Creates Gather XML node
-     * @see module:inboundxml/gather
+     * @see module:zang-node/inboundxml/gather
      */
     getspeech,
     /**
      * Creates Hangup XML node
-     * @see module:inboundxml/hangup
+     * @see module:zang-node/inboundxml/hangup
      */
     hangup,
     /**
      * Creates Number XML node
-     * @see module:inboundxml/number
+     * @see module:zang-node/inboundxml/number
      */
     number,
     /**
      * Creates Pause XML node
-     * @see module:inboundxml/pause
+     * @see module:zang-node/inboundxml/pause
      */
     pause,
     /**
      * Creates Ping XML node
-     * @see module:inboundxml/ping
+     * @see module:zang-node/inboundxml/ping
      */
     ping,
     /**
      * Creates Play XML node
-     * @see module:inboundxml/play
+     * @see module:zang-node/inboundxml/play
      */
     play,
     /**
      * Creates PlayLastRecording XML node
-     * @see module:inboundxml/playlastrecording
+     * @see module:zang-node/inboundxml/playlastrecording
      */
     playlastrecording,
     /**
      * Creates Record XML node
-     * @see module:inboundxml/record
+     * @see module:zang-node/inboundxml/record
      */
     record,
     /**
      * Creates Redirect XML node
-     * @see module:inboundxml/redirect
+     * @see module:zang-node/inboundxml/redirect
      */
     redirect,
     /**
      * Creates Reject XML node
-     * @see module:inboundxml/reject
+     * @see module:zang-node/inboundxml/reject
      */
     reject,
     /**
      * Creates Response XML node
-     * @see module:inboundxml/response
+     * @see module:zang-node/inboundxml/response
      */
     response,
     /**
      * Creates Say XML node
-     * @see module:inboundxml/say
+     * @see module:zang-node/inboundxml/say
      */
     say,
     /**
      * Creates Sip XML node
-     * @see module:inboundxml/sip
+     * @see module:zang-node/inboundxml/sip
      */
     sip,
     /**
      * Creates Sms XML node
-     * @see module:inboundxml/sms
+     * @see module:zang-node/inboundxml/sms
      */
     sms,
     /**
      * Creates User XML node
-     * @see module:inboundxml/user
+     * @see module:zang-node/inboundxml/user
      */
     user
 };

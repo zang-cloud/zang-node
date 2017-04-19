@@ -1,12 +1,12 @@
 'use strict';
 const expectation = require('./expectation');
 const enums = require('../enums');
-const Connectors = require('../connectors');
+const TranscriptionsConnector = require('../connectors/transcriptions-connector');
 
-const transcriptionsConnector = new Connectors({
+const transcriptionsConnector = new TranscriptionsConnector({
     accountSid: 'TestAccountSid',
     authToken: 'TestToken'
-}).transcriptions;
+});
 
 describe('TranscriptionsTest', function () {
     beforeEach(function () {

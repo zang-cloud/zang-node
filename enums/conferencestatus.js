@@ -2,6 +2,10 @@
 const utils = require('./enum-utils');
 
 /**
+ * @module zang-node/enums/conferencestatus
+ */
+
+/**
  * @readonly
  * @enum {string}
  */

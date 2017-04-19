@@ -1,10 +1,10 @@
 'use strict';
 
-/**
- * @module
- */
-
 const utils = require('./xml-utils');
+
+/**
+ * @module zang-node/inboundxml/getspeech
+ */
 
 /**
  * Creates a GetSpeech element.

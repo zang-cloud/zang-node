@@ -1,6 +1,10 @@
 'use strict';
 
 /**
+ * @module zang-node/enums/product
+ */
+
+/**
  * @readonly
  * @enum {string} Product
  */

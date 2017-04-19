@@ -31,7 +31,7 @@ function SipCredentialsConnector(configuration) {
 
     /**
      * Show info on SIP domain credentials lists
-     * @param {Object} params Request parameters
+     * @param {Object} [params] Request parameters
      * @param {string} [params.accountSid] Account SID
      * @returns {Promise} List of Credentials Lists
      */

@@ -1,5 +1,10 @@
 'use strict';
+
 const utils = require('./enum-utils');
+
+/**
+ * @module zang-node/enums/answeredby
+ */
 
 /**
  * @readonly

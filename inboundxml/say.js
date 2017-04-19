@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module
+ * @module zang-node/inboundxml/say
  */
 
 const utils = require('./xml-utils');
