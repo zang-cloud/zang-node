@@ -12,10 +12,7 @@ const _ = require('lodash');
 const defaultConfiguration = {
     accountSid: undefined,
     authToken: undefined,
-    baseUrl: 'https://api.zang.io/v2',
-    proxyHost: undefined,
-    proxyPort: undefined,
-    proxyProtocol: undefined
+    baseUrl: 'https://api.zang.io/v2'
 };
 
 const api = {

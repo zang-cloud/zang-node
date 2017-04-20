@@ -22,6 +22,7 @@ module.exports.enums = require('./enums');
  * Creates a Connectors object which contains all of the specific connectors.
  * @static
  * @type {Connectors}
+ * @see module:zang-node/connectors
  */
 module.exports.Connectors = require('./connectors');
 

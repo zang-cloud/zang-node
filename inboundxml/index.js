@@ -54,7 +54,7 @@ module.exports = {
      * @returns {Object}
      */
     build: function (xmlDefinition) {
-        const createdXml = xml(xmlDefinition, {indent: '  '});
+        const createdXml = xml(xmlDefinition, {indent: '  ', declaration: true});
         return loadSchema().then(function(){
             if (!schema) return createdXml;
             const validationErrors = schema.validate(createdXml);
