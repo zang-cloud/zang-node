@@ -16,7 +16,9 @@ connector.viewApplicationClient({
 //list application clients
 connector.listApplicationClients({
     accountSid: 'TestAccountSid',
-    applicationSid: 'TestApplicationSid'
+    applicationSid: 'TestApplicationSid',
+    page: 0,
+    pageSize: 10
 }).then(function(applicationClients){
    console.log(applicationClients.total);
 });

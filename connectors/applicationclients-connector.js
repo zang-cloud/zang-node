@@ -33,6 +33,8 @@ function ApplicationClientsConnector(configuration) {
      * Lists available application clients.
      * @param {string} [params.accountSid] Account SID
      * @param {string} params.applicationSid Application SID of the client
+     * @param {number} [params.page] Page to return
+     * @param {number} [params.pageSize] Number of items to return per page
      * @return {Promise} List of available Application Clients
      */
     this.listApplicationClients = function (params) {

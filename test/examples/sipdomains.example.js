@@ -14,7 +14,10 @@ connector.viewDomain({
 });
 
 //list domains
-connector.listDomains().then(function (data) {
+connector.listDomains({
+    page: 0,
+    pageSize: 10
+}).then(function (data) {
     console.log(data);
 });
 
@@ -61,7 +64,9 @@ connector.deleteDomain({
 
 //list mapped credentials lists
 connector.listMappedCredentialsLists({
-    domainSid: 'TestDomainSid'
+    domainSid: 'TestDomainSid',
+    page: 0,
+    pageSize: 10
 }).then(function (data) {
     console.log(data);
 });
@@ -84,7 +89,9 @@ connector.deleteMappedCredentialsList({
 
 //list mapped ip acls
 connector.listMappedIpAccessControlLists({
-    domainSid: 'TestDomainSid'
+    domainSid: 'TestDomainSid',
+    page: 0,
+    pageSize: 10
 }).then(function (data) {
     console.log(data);
 });

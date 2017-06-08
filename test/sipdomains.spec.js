@@ -26,7 +26,10 @@ describe('SipDomainsTest', function () {
 
     describe('listDomains', function () {
         it('should return a list of domains', function () {
-            return connector.listDomains().then(data => {
+            return connector.listDomains({
+                page: 0,
+                pageSize: 10
+            }).then(data => {
                 console.log(data);
                 return data;
             });
@@ -89,7 +92,9 @@ describe('SipDomainsTest', function () {
     describe('listMappedCredentialsList', function () {
         it('should return a list of credentials lists', function () {
             return connector.listMappedCredentialsLists({
-                domainSid: 'TestDomainSid'
+                domainSid: 'TestDomainSid',
+                page: 0,
+                pageSize: 10
             }).then(data => {
                 console.log(data);
                 return data;
@@ -124,7 +129,9 @@ describe('SipDomainsTest', function () {
     describe('listMappedIpAcls', function () {
         it('should return a list of access control lists', function () {
             return connector.listMappedIpAccessControlLists({
-                domainSid: 'TestDomainSid'
+                domainSid: 'TestDomainSid',
+                page: 0,
+                pageSize: 10
             }).then(data => {
                 console.log(data);
                 return data;

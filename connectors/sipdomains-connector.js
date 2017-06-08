@@ -33,14 +33,18 @@ function SipDomainsConnector(configuration) {
      * List your SIP domains.
      * @param {Object} params Request parameters
      * @param {string} [params.accountSid] Account SID
+     * @param {number} [params.page] Page to return
+     * @param {number} [params.pageSize] Number of items to return per page
      * @returns {Promise} List of SIP Domains
      */
     this.listDomains = function (params) {
         params = params || {};
+        let queryParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'GET',
             accountSid: params.accountSid,
-            path: `/SIP/Domains.json`
+            path: `/SIP/Domains.json`,
+            queryParams
         });
     };
 
@@ -120,14 +124,19 @@ function SipDomainsConnector(configuration) {
      * @param {Object} params Request parameters
      * @param {string} [params.accountSid] Account SID
      * @param {string} params.domainSid Domain SID
+     * @param {number} [params.page] Page to return
+     * @param {number} [params.pageSize] Number of items to return per page
      * @returns {Promise} List of Credential Lists.
      */
     this.listMappedCredentialsLists = function (params) {
         params = params || {};
+        let queryParams = utils.prepareParams(params);
+        delete queryParams.domainSid;
         return http.request(config, {
             method: 'GET',
             accountSid: params.accountSid,
-            path: `/SIP/Domains/${params.domainSid}/CredentialListMappings.json`
+            path: `/SIP/Domains/${params.domainSid}/CredentialListMappings.json`,
+            queryParams
         });
     };
 
@@ -173,14 +182,19 @@ function SipDomainsConnector(configuration) {
      * @param {Object} params Request parameters
      * @param {string} [params.accountSid] Account SID
      * @param {string} params.domainSid Domain SID
+     * @param {number} [params.page] Page to return
+     * @param {number} [params.pageSize] Number of items to return per page
      * @returns {Promise}  of Access Control Lists.
      */
     this.listMappedIpAccessControlLists = function (params) {
         params = params || {};
+        let queryParams = utils.prepareParams(params);
+        delete queryParams.domainSid;
         return http.request(config, {
             method: 'GET',
             accountSid: params.accountSid,
-            path: `/SIP/Domains/${params.domainSid}/IpAccessControlListMappings.json`
+            path: `/SIP/Domains/${params.domainSid}/IpAccessControlListMappings.json`,
+            queryParams
         });
     };
 

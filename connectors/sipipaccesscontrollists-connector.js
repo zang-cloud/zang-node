@@ -124,14 +124,19 @@ function SipIpAccessControlListsConnector(configuration) {
      * @param {Object} params Request parameters
      * @param {string} [params.accountSid] Account SID
      * @param {string} params.ipAccessControlListSid IP Access Control List SID
+     * @param {number} [params.page] Page to return
+     * @param {number} [params.pageSize] Number of items to return per page
      * @returns {Promise} List of IP Addresses
      */
     this.listAccessControlListIps = function (params) {
         params = params || {};
+        let queryParams = utils.prepareParams(params);
+        delete queryParams.ipAccessControlListSid;
         return http.request(config, {
             method: 'GET',
             accountSid: params.accountSid,
-            path: `/SIP/IpAccessControlLists/${params.ipAccessControlListSid}/IpAddresses.json`
+            path: `/SIP/IpAccessControlLists/${params.ipAccessControlListSid}/IpAddresses.json`,
+            queryParams
         });
     };
 

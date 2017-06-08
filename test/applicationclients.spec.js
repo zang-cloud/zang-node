@@ -29,7 +29,9 @@ describe('ApplicationClientsTest', function () {
         it('should list application clients', function () {
             return connector.listApplicationClients({
                 accountSid: 'TestAccountSid',
-                applicationSid: 'TestApplicationSid'
+                applicationSid: 'TestApplicationSid',
+                page: 0,
+                pageSize: 10
             }).then(data => {
                 console.log(data);
                 return data;

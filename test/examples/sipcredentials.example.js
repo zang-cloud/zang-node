@@ -13,7 +13,10 @@ connector.viewCredentialsList({
 });
 
 //list credentials lists
-connector.listCredentialsLists().then(function (data) {
+connector.listCredentialsLists({
+    page: 0,
+    pageSize: 10
+}).then(function (data) {
     console.log(data);
 });
 
@@ -49,7 +52,9 @@ connector.viewCredential({
 
 //list credentials
 connector.listCredentials({
-    credentialsListSid: 'TestCredentialsListSid'
+    credentialsListSid: 'TestCredentialsListSid',
+    page: 0,
+    pageSize: 10
 }).then(function (data) {
     console.log(data);
 });

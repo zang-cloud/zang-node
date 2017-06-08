@@ -32,7 +32,16 @@
       "method": "GET",
       "path": "Applications/TestApplicationSid/Clients.json",
       "bodyParams": null,
-      "queryParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
       "response": "/applicationclients/applicationclientslist.json"
     },
     "createApplicationClient": {
@@ -1212,7 +1221,16 @@
       "method": "GET",
       "path": "SIP/IpAccessControlLists/TestIpAccessControlListSid/IpAddresses.json",
       "bodyParams": null,
-      "queryParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
       "response": "/sipdomains/ipaddresslist.json"
     },
     "addAclIp": {
@@ -1267,7 +1285,16 @@
       "method": "GET",
       "path": "SIP/CredentialLists.json",
       "bodyParams": null,
-      "queryParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
       "response": "/sipdomains/credentialslistlist.json"
     },
     "createCredentialsList": {
@@ -1312,7 +1339,16 @@
       "method": "GET",
       "path": "SIP/CredentialLists/TestCredentialsListSid/Credentials.json",
       "bodyParams": null,
-      "queryParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
       "response": "/sipdomains/listofcredentials.json"
     },
     "createCredential": {
@@ -1363,7 +1399,16 @@
       "method": "GET",
       "path": "SIP/Domains.json",
       "bodyParams": null,
-      "queryParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
       "response": "/sipdomains/domainslist.json"
     },
     "createDomain": {
@@ -1469,7 +1514,16 @@
       "method": "GET",
       "path": "SIP/Domains/TestDomainSid/CredentialListMappings.json",
       "bodyParams": null,
-      "queryParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
       "response": "/sipdomains/credentialslistlist.json"
     },
     "mapCredentialsList": {
@@ -1495,7 +1549,16 @@
       "method": "GET",
       "path": "SIP/Domains/TestDomainSid/IpAccessControlListMappings.json",
       "bodyParams": null,
-      "queryParams": null,
+      "queryParams": [
+        {
+          "name": "Page",
+          "value": "0"
+        },
+        {
+          "name": "PageSize",
+          "value": "10"
+        }
+      ],
       "response": "/sipdomains/ipacllist.json"
     },
     "mapIpAcl": {

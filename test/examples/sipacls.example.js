@@ -52,7 +52,9 @@ connector.viewAccessControlListIp({
 
 //list access control list ips
 connector.listAccessControlListIps({
-    ipAccessControlListSid: 'TestIpAccessControlListSid'
+    ipAccessControlListSid: 'TestIpAccessControlListSid',
+    page: 0,
+    pageSize: 10
 }).then(function (data) {
     console.log(data);
 });

@@ -33,14 +33,18 @@ function SipCredentialsConnector(configuration) {
      * Show info on SIP domain credentials lists
      * @param {Object} [params] Request parameters
      * @param {string} [params.accountSid] Account SID
+     * @param {number} [params.page] Page to return
+     * @param {number} [params.pageSize] Number of items to return per page
      * @returns {Promise} List of Credentials Lists
      */
     this.listCredentialsLists = function (params) {
         params = params || {};
+        let queryParams = utils.prepareParams(params);
         return http.request(config, {
             method: 'GET',
             accountSid: params.accountSid,
-            path: `/SIP/CredentialLists.json`
+            path: `/SIP/CredentialLists.json`,
+            queryParams
         });
     };
 
@@ -120,14 +124,19 @@ function SipCredentialsConnector(configuration) {
      * @param {Object} params Request parameters
      * @param {string} [params.accountSid] Account SID
      * @param {string} params.credentialsListSid Credentials List SID
+     * @param {number} [params.page] Page to return
+     * @param {number} [params.pageSize] Number of items to return per page
      * @returns {Promise} List of Credentials
      */
     this.listCredentials = function (params) {
         params = params || {};
+        let queryParams = utils.prepareParams(params);
+        delete queryParams.credentialsListSid;
         return http.request(config, {
             method: 'GET',
             accountSid: params.accountSid,
-            path: `/SIP/CredentialLists/${params.credentialsListSid}/Credentials.json`
+            path: `/SIP/CredentialLists/${params.credentialsListSid}/Credentials.json`,
+            queryParams
         });
     };
 

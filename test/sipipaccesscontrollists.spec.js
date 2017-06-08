@@ -85,7 +85,9 @@ describe('SipAclTest', function () {
     describe('listAclIps', function () {
         it('should return a list of acl ip addresses', function () {
             return connector.listAccessControlListIps({
-                ipAccessControlListSid: 'TestIpAccessControlListSid'
+                ipAccessControlListSid: 'TestIpAccessControlListSid',
+                page: 0,
+                pageSize: 10
             }).then(data => {
                 console.log(data);
                 return data;

@@ -26,7 +26,10 @@ describe('SipCredentialsTest', function () {
 
     describe('listCredentialsLists', function () {
         it('should return a list of credentials lists', function () {
-            return connector.listCredentialsLists().then(data => {
+            return connector.listCredentialsLists({
+                page: 0,
+                pageSize: 10
+            }).then(data => {
                 console.log(data);
                 return data;
             });
@@ -82,7 +85,9 @@ describe('SipCredentialsTest', function () {
     describe('listCredentials', function () {
         it('should return a list of credentials', function () {
             return connector.listCredentials({
-                credentialsListSid: 'TestCredentialsListSid'
+                credentialsListSid: 'TestCredentialsListSid',
+                page: 0,
+                pageSize: 10
             }).then(data => {
                 console.log(data);
                 return data;
