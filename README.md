@@ -5,7 +5,7 @@ This Node.js library is an open source tool built to simplify interaction with t
 
 For more information about Zang, please visit: [Zang Cloud](https://www.zang.io/products/cloud)
 
-To read the official documentation visit [Zang Docs](http://docs.zang.io)
+To read the official documentation visit [Zang Docs](http://docs.zang.io/aspx/docs)
 
 ---
 
@@ -22,7 +22,7 @@ Usage
 
 ### REST
 
-See the [Zang REST API documentation](http://docs.zang.io/docs/overview) for more information.
+See the [Zang REST API documentation](http://docs.zang.io/aspx/rest) for more information.
 
 #### Send SMS Example
 
@@ -107,7 +107,7 @@ Visit the [Zang Docs](http://docs.zang.io) page for more information about the r
 
 ### InboundXML
 
-InboundXML is an XML dialect which enables you to control phone call flow. For more information please visit the [Zang InboundXML documentation](http://docs.zang.io/docs/inboundxml-overview).
+InboundXML is an XML dialect which enables you to control phone call flow. For more information please visit the [Zang InboundXML documentation](http://docs.zang.io/aspx/inboundxml).
 
 This library helps you generate InboundXML with a set of functions located under `zang.inboundXml`. Valid InboundXML documents have only one \<Response\> element at the root level and the rest of the instructions are contained inside.
 
