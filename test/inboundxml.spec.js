@@ -118,11 +118,18 @@ describe('SimpleInboundXmlTest', function () {
                     method: enums.HttpMethod.POST,
                     numDigits: 12,
                     timeout: 24,
+                    input: enums.Input.SPEECH_DTMF,
+                    hints: "search",
+                    language: enums.Language.IT,
                     content: [
                         ix.pause(),
                         ix.play(),
                         ix.playlastrecording(),
-                        ix.say()
+                        ix.say({
+                            language: enums.Language.EN,
+                            text: 'Plese enter 4 digit pin',
+                            voice: enums.Voice.FEMALE
+                        })
                     ]
                 }),
                 ix.sms({
@@ -133,6 +140,15 @@ describe('SimpleInboundXmlTest', function () {
                     statusCallbackMethod: enums.HttpMethod.GET,
                     to: '+12312',
                     text: 'Hello'
+                }),
+                ix.mms({
+                    action: 'action',
+                    method: enums.HttpMethod.POST,
+                    from: '+123',
+                    statusCallback: 'statuscallback',
+                    to: '+12312',
+                    text: 'This is a test MMS from Zang Cloud!',
+                    mediaUrl:'https://tinyurl.com/lpewlmo'
                 }),
                 ix.record({
                     action: 'action',

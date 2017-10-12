@@ -21,6 +21,10 @@ module.exports.AuthType = require('./authtype');
  */
 module.exports.AvailableNumberType = require('./availablenumbertype');
 /**
+ * @see module:zang-node/enums/bcp-langugae
+ */
+module.exports.BCPLanguage = require('./bcp-language');
+/**
  * @see module:zang-node/enums/calldirection
  */
 module.exports.CallDirection = require('./calldirection');
@@ -48,6 +52,10 @@ module.exports.HttpMethod = require('./httpmethod');
  * @see module:zang-node/enums/ifmachine
  */
 module.exports.IfMachine = require('./ifmachine');
+/**
+ * @see module:zang-node/enums/input
+ */
+module.exports.Input = require('./input');
 /**
  * @see module:zang-node/enums/loglevel
  */

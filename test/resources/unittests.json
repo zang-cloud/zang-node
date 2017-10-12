@@ -1038,6 +1038,44 @@
       "response": "/incomingphonenumbers/incomingphonenumber.json"
     }
   },
+  "MmsTest": {
+    "sendMms": {
+      "method": "POST",
+      "path": "MMS/Messages.json",
+      "bodyParams": [
+        {
+          "name": "To",
+          "value": "+123456"
+        },
+        {
+          "name": "From",
+          "value": "+654321"
+        },
+        {
+          "name": "Body",
+          "value": "test from node"
+        },
+        {
+          "name": "StatusCallback",
+          "value": "callback.url"
+        },
+        {
+          "name": "StatusCallbackMethod",
+          "value": "GET"
+        },
+        {
+          "name": "AllowMultiple",
+          "value": "false"
+        },
+        {
+          "name": "MediaUrl",
+          "value": "https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif"
+        }
+      ],
+      "queryParams": null,
+      "response": "/mms/mms.json"
+    }
+  },
   "NotificationsTest": {
     "viewNotification": {
       "method": "GET",

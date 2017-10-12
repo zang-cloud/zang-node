@@ -1,0 +1,16 @@
+{
+    "body": "test from node",
+    "status": "sent",
+    "direction": "outbound",
+    "date_updated": "Tue, 28 Feb 2017 14:02:44 -0000",
+    "price": "0.0616",
+    "from": "+654321",
+    "media_url": "https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif",
+    "account_sid": "TestAccountSid",
+    "to": "+123456",
+    "mms_sid": "TestMMSSid",
+    "date_sent": "Tue, 28 Feb 2017 14:02:44 -0000",
+    "date_created": "Tue, 28 Feb 2017 14:02:38 -0000",
+    "api_version": "v2"
+  }
+  
