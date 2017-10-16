@@ -34,7 +34,6 @@ const api = {
         if (opts.method == "POST") {
             requestParameters.headers["content-type"] = "application/x-www-form-urlencoded"
         }
-        console.log("req. Params", requestParameters);
         return rp(requestParameters).then(function (data) {
             return JSON.parse(data);
         }).catch(function (err) {
