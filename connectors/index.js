@@ -13,6 +13,7 @@ const CarrierServicesConnector = require('./carrierservices-connector');
 const ConferencesConnector = require('./conferences-connector');
 const FraudControlConnector = require('./fraudcontrol-connector');
 const IncomingPhoneNumbersConnector = require('./incomingphonenumbers-connector');
+const MmsConnector = require('./mms-connector');
 const NotificationsConnector = require('./notifications-connector');
 const RecordingsConnector = require('./recordings-connector');
 const SipCredentialsConnector = require('./sipcredentials-connector');
@@ -49,6 +50,8 @@ function Connectors(configuration) {
         this.incomingPhoneNumbers = new IncomingPhoneNumbersConnector(configuration);
         /** @type {NotificationsConnector} */
         this.notifications = new NotificationsConnector(configuration);
+        /** @type {NotificationsConnector} */
+        this.mms = new MmsConnector(configuration);
         /** @type {RecordingsConnector} */
         this.recordings = new RecordingsConnector(configuration);
         /** @type {SipCredentialsConnector} */

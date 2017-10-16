@@ -1,0 +1,12 @@
+{
+  "status": "queued",
+  "mms_sid": "TestMMSSid",
+  "account_sid": "TestAccountSid",
+  "from": "+654321",
+  "to": "+123456",
+  "body": "This is MMS sent from Zang",
+  "date_created": "2017-10-16T08:15:08+0000",
+  "media_url": "https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif",
+  "direction": "outbound",
+  "apiVersion": "v2"
+}

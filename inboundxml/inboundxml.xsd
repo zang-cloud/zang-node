@@ -116,6 +116,13 @@
             <xsd:minLength value="1"/>
         </xsd:restriction>
     </xsd:simpleType>
+    <xsd:simpleType name="gather_input">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="dtmf"/>
+            <xsd:enumeration value="speech"/>
+            <xsd:enumeration value="speech dtmf"/>
+        </xsd:restriction>
+    </xsd:simpleType>
 
     <xsd:element name="Conference">
         <xsd:complexType mixed="true">
@@ -186,6 +193,9 @@
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="PlayLastRecording"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Pause"/>
             </xsd:choice>
+            <xsd:attribute name="input" type="gather_input" use="required"/>
+            <xsd:attribute name="hints" type="xsd:string" use="optional"/>
+            <xsd:attribute name="language" type="tts_languages" use="optional"/>
             <xsd:attribute name="action" type="xsd:anyURI" use="optional"/>
             <xsd:attribute name="method" type="http_methods" use="optional"/>
             <xsd:attribute name="timeout" type="positive_integer" use="optional"/>
@@ -319,6 +329,16 @@
             <xsd:attribute name="method" type="http_methods" use="optional"/>
             <xsd:attribute name="statusCallback" type="xsd:anyURI" use="optional"/>
             <xsd:attribute name="statusCallbackMethod" type="http_methods" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="Mms">
+        <xsd:complexType mixed="true">
+            <xsd:attribute name="to" type="xsd:string" use="required"/>
+            <xsd:attribute name="from" type="xsd:string" use="required"/>
+            <xsd:attribute name="action" type="xsd:anyURI" use="optional"/>
+            <xsd:attribute name="method" type="http_methods" use="optional"/>
+            <xsd:attribute name="statusCallback" type="xsd:anyURI" use="optional"/>
+            <xsd:attribute name="mediaUrl" type="xsd:anyURI" use="required"/>
         </xsd:complexType>
     </xsd:element>
     <xsd:element name="Sip">

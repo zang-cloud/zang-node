@@ -11,6 +11,7 @@ const dial = require('./dial');
 const gather = require('./gather');
 const getspeech = require('./getspeech');
 const hangup = require('./hangup');
+const mms = require('./mms');
 const number = require('./number');
 const pause = require('./pause');
 const ping = require('./ping');
@@ -91,6 +92,11 @@ module.exports = {
      * @see module:zang-node/inboundxml/hangup
      */
     hangup,
+    /**
+     * Creates Mms XML node
+     * @see module:zang-node/inboundxml/mms
+     */
+    mms,
     /**
      * Creates Number XML node
      * @see module:zang-node/inboundxml/number

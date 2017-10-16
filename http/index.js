@@ -27,15 +27,19 @@ const api = {
                 password: config.authToken,
                 sendImmediately: true
             },
+            headers:{},
             qs,
             body: bodyString
         };
-        return rp(requestParameters).then(function(data){
+        if (opts.method == "POST") {
+            requestParameters.headers["content-type"] = "application/x-www-form-urlencoded"
+        }
+        return rp(requestParameters).then(function (data) {
             return JSON.parse(data);
-        }).catch(function(err){
+        }).catch(function (err) {
             let errorData = null;
             if (err.error) {
-                try{
+                try {
                     errorData = JSON.parse(err.error);
                     errorData.innerException = err;
                 } catch (e) {
@@ -49,12 +53,12 @@ const api = {
             }
         });
     },
-    createBodyString: function(body) {
+    createBodyString: function (body) {
         if (!body) return undefined;
         let bodyKeys = Object.keys(body);
         bodyKeys.sort();
         let bodyVals = [];
-        bodyKeys.forEach(function(key){
+        bodyKeys.forEach(function (key) {
             bodyVals.push(encodeURIComponent(key) + '=' + encodeURIComponent(body[key]));
         });
         return bodyVals.join('&');
