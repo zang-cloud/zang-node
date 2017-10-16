@@ -1053,7 +1053,7 @@
         },
         {
           "name": "Body",
-          "value": "test from node"
+          "value": "This is MMS sent from Zang"
         },
         {
           "name": "StatusCallback",
@@ -1062,10 +1062,6 @@
         {
           "name": "StatusCallbackMethod",
           "value": "GET"
-        },
-        {
-          "name": "AllowMultiple",
-          "value": "false"
         },
         {
           "name": "MediaUrl",

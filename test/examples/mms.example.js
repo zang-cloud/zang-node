@@ -6,15 +6,14 @@ var connector = new zang.MmsConnector({
     authToken: '{AuthToken}'
 });
 
-//send sms message
+//send mms message
 connector.sendMmsMessage({
     to: '+123456',
     from: '+654321',
-    body: 'Hello from Zang!',
-    statusCallback: 'http://mycallback.url.com',
+    body: 'This is MMS sent from Zang',
+    mediaUrl: 'https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif',
+    statusCallback: 'callback.url',
     statusCallbackMethod: enums.HttpMethod.GET,
-    allowMultiple: true,
-    mediaUrl:'https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif'
 }).then(function (data) {
     console.log(data);
 });

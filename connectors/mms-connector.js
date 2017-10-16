@@ -27,8 +27,10 @@ function MmsConnector(configuration) {
      * @returns {Promise} The sent SMS message.
      */
     this.sendMmsMessage = function (params) {
+        console.log("params:",params)
         params = params || {};
         let bodyParams = utils.prepareParams(params);
+        console.log(bodyParams);
         return http.request(config, {
             method: 'POST',
             accountSid: params.accountSid,

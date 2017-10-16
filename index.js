@@ -44,6 +44,8 @@ module.exports.ConferencesConnector = require('./connectors/conferences-connecto
 module.exports.FraudControlConnector = require('./connectors/fraudcontrol-connector');
 /** @type {IncomingPhoneNumbersConnector} */
 module.exports.IncomingPhoneNumbersConnector = require('./connectors/incomingphonenumbers-connector');
+/** @type {Mms  Connector} */
+module.exports.MmsConnector = require('./connectors/mms-connector');
 /** @type {NotificationsConnector} */
 module.exports.NotificationsConnector = require('./connectors/notifications-connector');
 /** @type {RecordingsConnector} */

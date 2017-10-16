@@ -18,10 +18,9 @@ describe('MmsTest', function () {
             return connector.sendMmsMessage({
                 to: '+123456',
                 from: '+654321',
-                body: 'test from node',
+                body: 'This is MMS sent from Zang',
                 statusCallback: 'callback.url',
                 statusCallbackMethod: enums.HttpMethod.GET,
-                allowMultiple: false,
                 mediaUrl:'https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif'
             }).then(data => {
                 console.log(data);
