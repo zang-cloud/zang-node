@@ -306,6 +306,7 @@
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Reject"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Pause"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Sms"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Mms"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="GetSpeech"/>
             </xsd:choice>
             <xsd:attribute name="statusCallback" type="xsd:anyURI" use="optional"/>

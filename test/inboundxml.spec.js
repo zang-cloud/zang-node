@@ -120,7 +120,7 @@ describe('SimpleInboundXmlTest', function () {
                     timeout: 24,
                     input: enums.Input.SPEECH_DTMF,
                     hints: "search",
-                    language: enums.Language.IT,
+                    language: enums.BCPLanguage.EN_US,
                     content: [
                         ix.pause(),
                         ix.play(),
