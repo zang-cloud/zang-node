@@ -74,6 +74,129 @@
             <xsd:enumeration value="de"/>
         </xsd:restriction>
     </xsd:simpleType>
+    <xsd:simpleType name="bcp_languages">
+        <xsd:restriction base="xsd:string">            
+            <xsd:enumeration value="af-ZA"/>           
+            <xsd:enumeration value="am-ET"/>           
+            <xsd:enumeration value="hy-AM"/>           
+            <xsd:enumeration value="az-AZ"/>           
+            <xsd:enumeration value="id-ID"/>           
+            <xsd:enumeration value="ms-MY"/>           
+            <xsd:enumeration value="bn-BD"/>           
+            <xsd:enumeration value="bn-IN"/>           
+            <xsd:enumeration value="ca-ES"/>           
+            <xsd:enumeration value="cs-CZ"/>           
+            <xsd:enumeration value="da-DK"/>           
+            <xsd:enumeration value="de-DE"/>           
+            <xsd:enumeration value="en-AU"/>           
+            <xsd:enumeration value="en-CA"/>
+            <xsd:enumeration value="en-GH"/>
+            <xsd:enumeration value="en-GB"/>
+            <xsd:enumeration value="en-IN"/>
+            <xsd:enumeration value="en-IE"/>
+            <xsd:enumeration value="en-KE"/>
+            <xsd:enumeration value="en-NZ"/>
+            <xsd:enumeration value="en-NG"/>
+            <xsd:enumeration value="en-PH"/>
+            <xsd:enumeration value="en-ZA"/>
+            <xsd:enumeration value="en-TZ"/>
+            <xsd:enumeration value="en-US"/>
+            <xsd:enumeration value="es-AR"/>
+            <xsd:enumeration value="es-BO"/>
+            <xsd:enumeration value="es-CL"/>
+            <xsd:enumeration value="es-CO"/>
+            <xsd:enumeration value="es-CR"/>
+            <xsd:enumeration value="es-EC"/>
+            <xsd:enumeration value="es-SV"/>
+            <xsd:enumeration value="es-ES"/>
+            <xsd:enumeration value="es-US"/>
+            <xsd:enumeration value="es-GT"/>
+            <xsd:enumeration value="es-HN"/>
+            <xsd:enumeration value="es-MX"/>
+            <xsd:enumeration value="es-NI"/>
+            <xsd:enumeration value="es-PA"/>
+            <xsd:enumeration value="es-PY"/>
+            <xsd:enumeration value="es-PE"/>
+            <xsd:enumeration value="es-PR"/>
+            <xsd:enumeration value="es-DO"/>
+            <xsd:enumeration value="es-UY"/>
+            <xsd:enumeration value="es-VE"/>
+            <xsd:enumeration value="eu-ES"/>
+            <xsd:enumeration value="il-PH"/>
+            <xsd:enumeration value="fr-CA"/>
+            <xsd:enumeration value="fr-FR"/>
+            <xsd:enumeration value="gl-ES"/>
+            <xsd:enumeration value="ka-GE"/>
+            <xsd:enumeration value="gu-IN"/>
+            <xsd:enumeration value="hr-HR"/>
+            <xsd:enumeration value="zu-ZA"/>
+            <xsd:enumeration value="is-IS"/>
+            <xsd:enumeration value="it-IT"/>
+            <xsd:enumeration value="jv-ID"/>
+            <xsd:enumeration value="kn-IN"/>
+            <xsd:enumeration value="km-KH"/>
+            <xsd:enumeration value="lo-LA"/>
+            <xsd:enumeration value="lv-LV"/>
+            <xsd:enumeration value="lt-LT"/>
+            <xsd:enumeration value="hu-HU"/>
+            <xsd:enumeration value="ml-IN"/>
+            <xsd:enumeration value="mr-IN"/>
+            <xsd:enumeration value="nl-NL"/>
+            <xsd:enumeration value="ne-NP"/>
+            <xsd:enumeration value="nb-NO"/>
+            <xsd:enumeration value="pl-PL"/>
+            <xsd:enumeration value="pt-BR"/>
+            <xsd:enumeration value="pt-PT"/>
+            <xsd:enumeration value="ro-RO"/>
+            <xsd:enumeration value="si-LK"/>
+            <xsd:enumeration value="sk-SK"/>
+            <xsd:enumeration value="sl-SI"/>
+            <xsd:enumeration value="su-ID"/>
+            <xsd:enumeration value="sw-TZ"/>
+            <xsd:enumeration value="sw-KE"/>
+            <xsd:enumeration value="fi-FI"/>
+            <xsd:enumeration value="sv-SE"/>
+            <xsd:enumeration value="ta-IN"/>
+            <xsd:enumeration value="ta-SG"/>
+            <xsd:enumeration value="ta-LK"/>
+            <xsd:enumeration value="ta-MY"/>
+            <xsd:enumeration value="te-IN"/>
+            <xsd:enumeration value="vi-VN"/>
+            <xsd:enumeration value="tr-TR"/>
+            <xsd:enumeration value="ur-PK"/>
+            <xsd:enumeration value="ur-IN"/>
+            <xsd:enumeration value="el-GR"/>
+            <xsd:enumeration value="bg-BG"/>
+            <xsd:enumeration value="ru-RU"/>
+            <xsd:enumeration value="sr-RS"/>
+            <xsd:enumeration value="uk-UA"/>
+            <xsd:enumeration value="he-IL"/>
+            <xsd:enumeration value="ar-IL"/>
+            <xsd:enumeration value="ar-JO"/>
+            <xsd:enumeration value="ar-AE"/>
+            <xsd:enumeration value="ar-BH"/>
+            <xsd:enumeration value="ar-DZ"/>
+            <xsd:enumeration value="ar-SA"/>
+            <xsd:enumeration value="ar-IQ"/>
+            <xsd:enumeration value="ar-KW"/>
+            <xsd:enumeration value="ar-MA"/>
+            <xsd:enumeration value="ar-TN"/>
+            <xsd:enumeration value="ar-OM"/>
+            <xsd:enumeration value="ar-PS"/>
+            <xsd:enumeration value="ar-QA"/>
+            <xsd:enumeration value="ar-LB"/>
+            <xsd:enumeration value="ar-EG"/>
+            <xsd:enumeration value="fa-IR"/>
+            <xsd:enumeration value="hi-IN"/>
+            <xsd:enumeration value="th-TH"/>
+            <xsd:enumeration value="ko-KR"/>
+            <xsd:enumeration value="cmn-Hant-TW"/>
+            <xsd:enumeration value="yue-Hant-HK"/>
+            <xsd:enumeration value="ja-JP"/>
+            <xsd:enumeration value="cmn-Hans-HK"/>
+            <xsd:enumeration value="cmn-Hans-CN"/>
+        </xsd:restriction>
+    </xsd:simpleType>
     <xsd:simpleType name="transcription_quality">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="auto"/>
@@ -195,7 +318,7 @@
             </xsd:choice>
             <xsd:attribute name="input" type="gather_input" use="required"/>
             <xsd:attribute name="hints" type="xsd:string" use="optional"/>
-            <xsd:attribute name="language" type="tts_languages" use="optional"/>
+            <xsd:attribute name="language" type="bcp_languages" use="optional"/>
             <xsd:attribute name="action" type="xsd:anyURI" use="optional"/>
             <xsd:attribute name="method" type="http_methods" use="optional"/>
             <xsd:attribute name="timeout" type="positive_integer" use="optional"/>
