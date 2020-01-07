@@ -2,7 +2,7 @@
 
 /**
  * @typedef {Object} ZangConfiguration
- * @property {string} [baseUrl='https://api.zang.io/v2'] Zang API base URL
+ * @property {string} [baseUrl='https://api.zang.io/v2'] Avaya CPaaS API base URL
  * @property {string} accountSid Your Account SID.
  * @property {string} authToken Your Auth Token.
  */

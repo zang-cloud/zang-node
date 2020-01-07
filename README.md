@@ -1,11 +1,11 @@
 zang-node
 ==========
 
-This Node.js library is an open source tool built to simplify interaction with the [Zang](http://www.zang.io) telephony platform. Zang makes adding voice and SMS to applications fun and easy.
+This Node.js library is an open source tool built to simplify interaction with the [Avaya CPaaS](http://www.zang.io) telephony platform. Avaya CPaaS makes adding voice and SMS to applications fun and easy.
 
-For more information about Zang, please visit: [Zang Cloud](https://www.zang.io/products/cloud)
+For more information about Avaya CPaaS, please visit: [Avaya OneCloud™️ CPaaS ](https://www.zang.io/products/cloud)
 
-To read the official documentation visit [Zang Docs](http://docs.zang.io/aspx/docs)
+To read the official documentation visit [Avaya CPaaS Docs](http://docs.zang.io/aspx/docs)
 
 ---
 
@@ -22,7 +22,7 @@ Usage
 
 ### REST
 
-See the [Zang REST API documentation](http://docs.zang.io/aspx/rest) for more information.
+See the [Avaya CPaaS REST API documentation](http://docs.zang.io/aspx/rest) for more information.
 
 #### Send SMS Example
 
@@ -39,7 +39,7 @@ var connector = new zang.SmsConnector({
 connector.sendSmsMessage({
     to: '+123456',
     from: '+654321',
-    body: 'Hello from Zang!',
+    body: 'Hello from Avaya CPaaS!',
     statusCallback: 'http://mycallback.url.com',
     statusCallbackMethod: enums.HttpMethod.GET,
     allowMultiple: true
@@ -50,7 +50,7 @@ connector.sendSmsMessage({
 ```
 #### Configuration
 
-First a configuration must be defined by specifying your Zang credentials. This configuration is passed to `zang.Connectors` from which you can then access all of the specific connectors:
+First a configuration must be defined by specifying your Avaya CPaaS credentials. This configuration is passed to `zang.Connectors` from which you can then access all of the specific connectors:
 
 ```javascript
 var zang = require('zang-node');
@@ -103,11 +103,11 @@ var usage = usagesConnector.viewUsage({
 ```
 
 #### Response data
-Visit the [Zang Docs](http://docs.zang.io) page for more information about the returned data.
+Visit the [Avaya CPaaS Docs](http://docs.zang.io) page for more information about the returned data.
 
 ### InboundXML
 
-InboundXML is an XML dialect which enables you to control phone call flow. For more information please visit the [Zang InboundXML documentation](http://docs.zang.io/aspx/inboundxml).
+InboundXML is an XML dialect which enables you to control phone call flow. For more information please visit the [Avaya CPaaS InboundXML documentation](http://docs.zang.io/aspx/inboundxml).
 
 This library helps you generate InboundXML with a set of functions located under `zang.inboundXml`. Valid InboundXML documents have only one \<Response\> element at the root level and the rest of the instructions are contained inside.
 
@@ -124,7 +124,7 @@ var xmlDefinition = ix.response({content: [
     ix.say({
         language: enums.Language.EN,
         loop: 3,
-        text: 'Welcome to Zang!',
+        text: 'Welcome to Avaya CPaaS!',
         voice: enums.Voice.FEMALE
     })
 ]});
@@ -142,7 +142,7 @@ will render
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Response>
-    <Say loop="3" voice="female" language="en">Welcome to Zang!</Say>
+    <Say loop="3" voice="female" language="en">Welcome to Avaya CPaaS!</Say>
 </Response>
 ```
 

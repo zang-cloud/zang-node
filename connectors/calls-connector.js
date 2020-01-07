@@ -100,11 +100,11 @@ function CallsConnector(configuration) {
      *                           still be saved to the system and available either in your Transcriptions Logs or via
      *                           a REST List Transcriptions request. Url length is limited to 200 characters.
      * @param {boolean} [params.straightToVoicemail] Specifies whether this call should be sent straight to the user's voicemail.
-     * @param {IfMachine} [params.ifMachine] Specifies how Zang should handle this call if it goes to voicemail. Allowed values are
+     * @param {IfMachine} [params.ifMachine] Specifies how Avaya CPaaS should handle this call if it goes to voicemail. Allowed values are
      *                  "continue" to proceed as normal, "redirect" to redirect the call to the ifMachineUrl, or
      *                  "hangup" to hang up the call. Hangup occurs when the tone is played. IfMachine accuracy is
      *                  around 90% and may not work in all countries.
-     * @param {string} [params.ifMachineUrl] The URL Zang will redirect to for instructions if a voicemail machine is detected while the
+     * @param {string} [params.ifMachineUrl] The URL Avaya CPaaS will redirect to for instructions if a voicemail machine is detected while the
      *                     IfMachine parameter is set to "redirect". Url length is limited to 200 characters.
      * @param {HttpMethod} [params.ifMachineMethod] The HTTP method used to request the IfMachineUrl.
      * @param {string} [params.sipAuthUsername] Your authenticated SIP username, used only for SIP calls.

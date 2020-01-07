@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Zang helper APIs for Node.js
+ * Avaya CPaaS helper APIs for Node.js
  * @module zang-node
  */
 
@@ -12,7 +12,7 @@
  */
 module.exports.inboundXml = require('./inboundxml');
 /**
- * Contains various enums used when communicating with the Zang API.
+ * Contains various enums used when communicating with the Avaya CPaaS API.
  * @static
  * @see module:zang-node/enums
  */

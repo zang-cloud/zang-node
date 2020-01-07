@@ -52,7 +52,7 @@ function SipDomainsConnector(configuration) {
      * Create a new SIP domain.
      * @param {Object} params Request parameters
      * @param {string} [params.accountSid] Account SID
-     * @param {string} [params.domainName] An address on Zang uniquely associated with your account and through which all your SIP traffic is routed.
+     * @param {string} [params.domainName] An address on Avaya CPaaS uniquely associated with your account and through which all your SIP traffic is routed.
      * @param {string} [params.friendlyName] A human-readable name associated with this domain.
      * @param {string} [params.voiceUrl] The URL requested when a call is received by your domain.
      * @param {HttpMethod} [params.voiceMethod] The HTTP method used when requesting the VoiceUrl.
@@ -60,7 +60,7 @@ function SipDomainsConnector(configuration) {
      * @param {HttpMethod} [params.voiceFallbackMethod] The HTTP method used when requesting the VoiceFallbackUrl.
      * @param {string} [params.heartbeatUrl] URL that can be requested every 60 seconds during the call to notify of elapsed time and pass other general information.
      * @param {HttpMethod} [params.heartbeatMethod] 	Specifies the HTTP method used to request HeartbeatUrl.
-     * @param {string} [params.voiceStatusCallback] The URL that Zang will use to send you status notifications regarding your SIP call.
+     * @param {string} [params.voiceStatusCallback] The URL that Avaya CPaaS will use to send you status notifications regarding your SIP call.
      * @param {HttpMethod} [params.voiceStatusCallbackMethod] The HTTP method used when requesting the VoiceStatusCallback.
      * @returns {Promise} Created SIP domain.
      */
