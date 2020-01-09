@@ -147,7 +147,7 @@ describe('SimpleInboundXmlTest', function () {
                     from: '+123',
                     statusCallback: 'statuscallback',
                     to: '+12312',
-                    text: 'This is a test MMS from Avaya OneCloud CPaaS !',
+                    text: 'This is a test MMS from Avaya OneCloud CPaaS!',
                     mediaUrl: 'https://tinyurl.com/lpewlmo'
                 }),
                 ix.record({
