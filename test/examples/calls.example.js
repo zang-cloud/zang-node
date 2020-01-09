@@ -1,7 +1,7 @@
-var zang = require('zang-node');
-var enums = zang.enums;
+var cpaas = require('@avaya/cpaas');
+var enums = cpaas.enums;
 
-var connector = new zang.Connectors({
+var connector = new cpaas.Connectors({
     accountSid: '{AccountSid}',
     authToken: '{AuthToken}'
 }).calls;

@@ -1,6 +1,6 @@
-var zang = require('zang-node');
+var cpaas = require('@avaya/cpaas');
 
-var connector = new zang.ApplicationClientsConnector({
+var connector = new cpaas.ApplicationClientsConnector({
     accountSid: '{AccountSid}',
     authToken: '{AuthToken}'
 });

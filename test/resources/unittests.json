@@ -1053,7 +1053,7 @@
         },
         {
           "name": "Body",
-          "value": "This is MMS sent from Zang"
+          "value": "This is MMS sent from CPaaS"
         },
         {
           "name": "StatusCallback",

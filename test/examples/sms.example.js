@@ -1,7 +1,7 @@
-var zang = require('zang-node');
-var enums = zang.enums;
+var cpaas = require('@avaya/cpaas');
+var enums = cpaas.enums;
 
-var connector = new zang.SmsConnector({
+var connector = new cpaas.SmsConnector({
     accountSid: '{AccountSid}',
     authToken: '{AuthToken}'
 });
@@ -26,7 +26,7 @@ connector.listSmsMessages({
 connector.sendSmsMessage({
     to: '+123456',
     from: '+654321',
-    body: 'Hello from Zang!',
+    body: 'Hello from CPaaS!',
     statusCallback: 'http://mycallback.url.com',
     statusCallbackMethod: enums.HttpMethod.GET,
     allowMultiple: true

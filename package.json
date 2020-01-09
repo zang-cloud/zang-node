@@ -1,8 +1,8 @@
 {
-  "name": "zang-node",
-  "version": "0.0.1",
-  "description": "Node.js helper library for Zang",
-  "author": "Vladimir Prenner <vladimir.prenner@calyx.hr>",
+  "name": "@avaya/cpaas",
+  "version": "0.9.0",
+  "description": "Node.js helper library for Avaya CPaaS",
+  "author": "Avaya Cloud",
   "scripts": {
     "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- **/*.spec.js -R spec",
     "testl": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- **/*.spec.js -R spec",
@@ -13,18 +13,15 @@
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
     "jsdoc": "^3.4.3",
-    "mocha": "~3.2.0",
+    "mocha": "^6.2.2",
     "nock": "^9.0.11"
   },
   "dependencies": {
     "change-case": "^3.0.1",
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
     "xml": "^1.0.1"
-  },
-  "optionalDependencies": {
-    "libxml-xsd": "^0.5.2"
   }
 }

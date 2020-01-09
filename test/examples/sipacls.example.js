@@ -1,6 +1,6 @@
-var zang = require('zang-node');
+var cpaas = require('@avaya/cpaas');
 
-var connector = new zang.SipIpAccessControlListsConnector({
+var connector = new cpaas.SipIpAccessControlListsConnector({
     accountSid: '{AccountSid}',
     authToken: '{AuthToken}'
 });

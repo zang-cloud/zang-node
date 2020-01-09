@@ -3,7 +3,7 @@
 const utils = require('./xml-utils');
 
 /**
- * @module zang-node/inboundxml/conference
+ * @module @avaya/cpaas/inboundxml/conference
  */
 
 /**
@@ -20,7 +20,7 @@ const utils = require('./xml-utils');
  * @param {HttpMethod} [params.callbackMethod=POST] Method used to request the callback URL.
  * @param {HttpMethod} [params.method=POST] Method used to request the action URL.
  * @param {string} [params.waitSound] URL to inboundXML where conference participants can be sent to while they wait for entrance into the conference. Only <Play> method supported at this time.
- * @param {string} [params.digitsMatch] Specifies digits that Zang should listen for and send to the callbackUrl if a caller inputs them. Separate additional digits or digit patterns with a comma. Allowed Value: Pattern made up of the digits 0-9, #, or *.
+ * @param {string} [params.digitsMatch] Specifies digits that CPaaS should listen for and send to the callbackUrl if a caller inputs them. Separate additional digits or digit patterns with a comma. Allowed Value: Pattern made up of the digits 0-9, #, or *.
  * @param {boolean} [params.stayAlone=false] Boolean value specifying if the caller should stay alone in the conference call.
  * @param {boolean} [params.record=false] Boolean value specifying if the conference should be recorded.
  * @param {RecordingFileFormat} [params.recordFileFormat=MP3] File format in which the recording will be saved in.

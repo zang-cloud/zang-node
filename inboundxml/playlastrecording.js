@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module zang-node/inboundxml/playlastrecording
+ * @module @avaya/cpaas/inboundxml/playlastrecording
  */
 
 const utils = require('./xml-utils');

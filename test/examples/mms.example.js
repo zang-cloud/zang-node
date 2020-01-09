@@ -1,7 +1,7 @@
-var zang = require('zang-node');
-var enums = zang.enums;
+var cpaas = require('@avaya/cpaas');
+var enums = cpaas.enums;
 
-var connector = new zang.MmsConnector({
+var connector = new cpaas.MmsConnector({
     accountSid: '{AccountSid}',
     authToken: '{AuthToken}'
 });
@@ -10,7 +10,7 @@ var connector = new zang.MmsConnector({
 connector.sendMmsMessage({
     to: '+123456',
     from: '+654321',
-    body: 'This is MMS sent from Zang',
+    body: 'This is MMS sent from CPaaS',
     mediaUrl: 'https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif',
     statusCallback: 'callback.url',
     statusCallbackMethod: enums.HttpMethod.GET,

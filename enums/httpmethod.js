@@ -2,7 +2,7 @@
 const utils = require('./enum-utils');
 
 /**
- * @module zang-node/enums/httpmethod
+ * @module @avaya/cpaas/enums/httpmethod
  */
 
 /**

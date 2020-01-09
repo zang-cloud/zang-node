@@ -2,7 +2,7 @@
 const utils = require('./enum-utils');
 
 /**
- * @module zang-node/enums/samplingrate
+ * @module @avaya/cpaas/enums/samplingrate
  */
 
 /**

@@ -1,12 +1,12 @@
-var zang = require('zang-node');
-var ix = zang.inboundXml;
-var enums = zang.enums;
+var cpaas = require('@avaya/cpaas');
+var ix = cpaas.inboundXml;
+var enums = cpaas.enums;
 
 var xmlDefinition = ix.response({content: [
     ix.say({
         language: enums.Language.EN,
         loop: 3,
-        text: 'Welcome to Zang!',
+        text: 'Welcome to CPaaS!',
         voice: enums.Voice.FEMALE
     })
 ]});

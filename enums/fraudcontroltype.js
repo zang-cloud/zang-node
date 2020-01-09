@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module zang-node/enums/fraudcontroltype
+ * @module @avaya/cpaas/enums/fraudcontroltype
  */
 
 const utils = require('./enum-utils');

@@ -18,7 +18,7 @@ describe('MmsTest', function () {
             return connector.sendMmsMessage({
                 to: '+123456',
                 from: '+654321',
-                body: 'This is MMS sent from Zang',
+                body: 'This is MMS sent from CPaaS',
                 statusCallback: 'callback.url',
                 statusCallbackMethod: enums.HttpMethod.GET,
                 mediaUrl:'https://media.giphy.com/media/zZJzLrxmx5ZFS/giphy.gif'

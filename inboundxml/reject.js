@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module zang-node/inboundxml/reject
+ * @module @avaya/cpaas/inboundxml/reject
  */
 
 const utils = require('./xml-utils');

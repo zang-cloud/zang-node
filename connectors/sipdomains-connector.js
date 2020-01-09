@@ -7,7 +7,7 @@ const utils = require('./connector-utils');
 
 /**
  * Creates a new Sip Domains connector.
- * @param {ZangConfiguration} configuration connector configuration parameters
+ * @param {APIConfiguration} configuration connector configuration parameters
  * @constructor
  */
 function SipDomainsConnector(configuration) {
@@ -87,7 +87,7 @@ function SipDomainsConnector(configuration) {
      * @param {HttpMethod} [params.voiceFallbackMethod] The HTTP method used when requesting the VoiceFallbackUrl.
      * @param {string} [params.heartbeatUrl] URL that can be requested every 60 seconds during the call to notify of elapsed time and pass other general information.
      * @param {HttpMethod} [params.heartbeatMethod] 	Specifies the HTTP method used to request HeartbeatUrl.
-     * @param {string} [params.voiceStatusCallback] The URL that Zang will use to send you status notifications regarding your SIP call.
+     * @param {string} [params.voiceStatusCallback] The URL that CPaaS will use to send you status notifications regarding your SIP call.
      * @param {HttpMethod} [params.voiceStatusCallbackMethod] The HTTP method used when requesting the VoiceStatusCallback.
      * @returns {Promise} The updated Domain.
      */

@@ -40,7 +40,7 @@
     <xsd:simpleType name="boolean_or_positive_integer">
         <xsd:union memberTypes="positive_integer booleans"/>
     </xsd:simpleType>
-    <xsd:simpleType name="zangDirection">
+    <xsd:simpleType name="cpaasDirection">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value=""/>
             <!-- Backwards compatible with bothLegs -->
@@ -298,7 +298,7 @@
             <xsd:attribute name="heartbeatMethod" type="http_methods" use="optional"/>
             <xsd:attribute name="forwardedFrom" type="xsd:string" use="optional"/>
             <xsd:attribute name="record" type="booleans" use="optional"/>
-            <xsd:attribute name="recordDirection" type="zangDirection" use="optional"/>
+            <xsd:attribute name="recordDirection" type="cpaasDirection" use="optional"/>
             <xsd:attribute name="recordCallbackUrl" type="xsd:anyURI" use="optional"/>
             <xsd:attribute name="recordLifetime" type="positive_integer" use="optional"/>
             <xsd:attribute name="recordFormat" type="xsd:string" use="optional"/>
@@ -391,7 +391,7 @@
             <xsd:attribute name="bothLegs" type="booleans" use="optional"/>
             <!-- Deprecated in favor of direction -->
             <xsd:attribute name="fileFormat" type="xsd:string" use="optional"/>
-            <xsd:attribute name="direction" type="zangDirection" use="optional"/>
+            <xsd:attribute name="direction" type="cpaasDirection" use="optional"/>
             <xsd:attribute name="background" type="booleans" use="optional"/>
             <xsd:attribute name="sampleRate" type="sample_rate" use="optional"/>
             <xsd:attribute name="trimSilence" type="booleans" use="optional"/>

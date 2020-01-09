@@ -1,111 +1,111 @@
 'use strict';
 
 /**
- * @module zang-node/enums
+ * @module @avaya/cpaas/enums
  */
 
 // /**
-//  * @see module:zang-node/enums/answeredby
+//  * @see module:@avaya/cpaas/enums/answeredby
 //  */
 module.exports.AnsweredBy = require('./answeredby');
 /**
- * @see module:zang-node/enums/audiodirection
+ * @see module:@avaya/cpaas/enums/audiodirection
  */
 module.exports.AudioDirection = require('./audiodirection');
 /**
- * @see module:zang-node/enums/authtype
+ * @see module:@avaya/cpaas/enums/authtype
  */
 module.exports.AuthType = require('./authtype');
 /**
- * @see module:zang-node/enums/availablenumbertype
+ * @see module:@avaya/cpaas/enums/availablenumbertype
  */
 module.exports.AvailableNumberType = require('./availablenumbertype');
 /**
- * @see module:zang-node/enums/bcp-langugae
+ * @see module:@avaya/cpaas/enums/bcp-langugae
  */
 module.exports.BCPLanguage = require('./bcp-language');
 /**
- * @see module:zang-node/enums/calldirection
+ * @see module:@avaya/cpaas/enums/calldirection
  */
 module.exports.CallDirection = require('./calldirection');
 /**
- * @see module:zang-node/enums/callstatus
+ * @see module:@avaya/cpaas/enums/callstatus
  */
 module.exports.CallStatus = require('./callstatus');
 /**
- * @see module:zang-node/enums/conferencestatus
+ * @see module:@avaya/cpaas/enums/conferencestatus
  */
 module.exports.ConferenceStatus = require('./conferencestatus');
 /**
- * @see module:zang-node/enums/endcallstatus
+ * @see module:@avaya/cpaas/enums/endcallstatus
  */
 module.exports.EndCallStatus = require('./endcallstatus');
 /**
- * @see module:zang-node/enums/fraudcontroltype
+ * @see module:@avaya/cpaas/enums/fraudcontroltype
  */
 module.exports.FraudControlType = require('./fraudcontroltype');
 /**
- * @see module:zang-node/enums/httpmethod
+ * @see module:@avaya/cpaas/enums/httpmethod
  */
 module.exports.HttpMethod = require('./httpmethod');
 /**
- * @see module:zang-node/enums/ifmachine
+ * @see module:@avaya/cpaas/enums/ifmachine
  */
 module.exports.IfMachine = require('./ifmachine');
 /**
- * @see module:zang-node/enums/input
+ * @see module:@avaya/cpaas/enums/input
  */
 module.exports.Input = require('./input');
 /**
- * @see module:zang-node/enums/loglevel
+ * @see module:@avaya/cpaas/enums/loglevel
  */
 module.exports.LogLevel = require('./loglevel');
 /**
- * @see module:zang-node/enums/phonenumbertype
+ * @see module:@avaya/cpaas/enums/phonenumbertype
  */
 module.exports.PhoneNumberType = require('./phonenumbertype');
 /**
- * @see module:zang-node/enums/presencestatus
+ * @see module:@avaya/cpaas/enums/presencestatus
  */
 module.exports.PresenceStatus = require('./presencestatus');
 /**
- * @see module:zang-node/enums/products
+ * @see module:@avaya/cpaas/enums/products
  */
 module.exports.Product = require('./products');
 /**
- * @see module:zang-node/enums/recordingaudiodirection
+ * @see module:@avaya/cpaas/enums/recordingaudiodirection
  */
 module.exports.RecordingAudioDirection = require('./recordingaudiodirection');
 /**
- * @see module:zang-node/enums/recordingfileformat
+ * @see module:@avaya/cpaas/enums/recordingfileformat
  */
 module.exports.RecordingFileFormat = require('./recordingfileformat');
 /**
- * @see module:zang-node/enums/smsdirection
+ * @see module:@avaya/cpaas/enums/smsdirection
  */
 module.exports.SmsDirection = require('./smsdirection');
 /**
- * @see module:zang-node/enums/transcriptionquality
+ * @see module:@avaya/cpaas/enums/transcriptionquality
  */
 module.exports.TranscriptionQuality = require('./transcriptionquality');
 /**
- * @see module:zang-node/enums/transcriptionstatus
+ * @see module:@avaya/cpaas/enums/transcriptionstatus
  */
 module.exports.TranscriptionStatus = require('./transcriptionstatus');
 
 /**
- * @see module:zang-node/enums/language
+ * @see module:@avaya/cpaas/enums/language
  */
 module.exports.Language = require('./language');
 /**
- * @see module:zang-node/enums/rejectreason
+ * @see module:@avaya/cpaas/enums/rejectreason
  */
 module.exports.RejectReason = require('./rejectreason');
 /**
- * @see module:zang-node/enums/samplingrate
+ * @see module:@avaya/cpaas/enums/samplingrate
  */
 module.exports.SamplingRate = require('./samplingrate');
 /**
- * @see module:zang-node/enums/voice
+ * @see module:@avaya/cpaas/enums/voice
  */
 module.exports.Voice = require('./voice');

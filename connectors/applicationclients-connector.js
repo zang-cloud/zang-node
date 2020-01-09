@@ -7,7 +7,7 @@ const utils = require('./connector-utils');
 
 /**
  * Creates a new Application Clients connector.
- * @param {ZangConfiguration} configuration connector configuration parameters
+ * @param {APIConfiguration} configuration connector configuration parameters
  * @constructor
  */
 function ApplicationClientsConnector(configuration) {
@@ -55,7 +55,7 @@ function ApplicationClientsConnector(configuration) {
      * @param {string} params.applicationSid Application for which to create a new client
      * @param {string} [params.nickname] Nickname for the new client
      * @return {Promise} The created ApplicationClient
-     * @throws ZangException
+     * @throws CPaaSException
      */
     this.createApplicationClient = function (params) {
         params = params || {};

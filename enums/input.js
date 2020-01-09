@@ -2,7 +2,7 @@
 const utils = require('./enum-utils');
 
 /**
- * @module zang-node/enums/input
+ * @module @avaya/cpaas/enums/input
  */
 
 /**

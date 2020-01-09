@@ -4,6 +4,46 @@
  * @module zang-node/enums/product
  */
 
+ // Init
+const Product_pre = {
+    "OUTBOUND_CALL": 1,
+    "INBOUND_CALL": 2,
+    "OUTBOUND_SMS": 3,
+    "INBOUND_SMS": 4,
+    "OUTBOUND_SIP": 5,
+    "INBOUND_SIP": 6,
+    "RECORDING": 7,
+    "RECURRING_DID": 8,
+    "RECURRING_DID_PREMIUM": 9,
+    "TRANSCRIPTION_AUTO": 12,
+    "UNKNOWN_13": 13,
+    "TRANSCRIPTION_HYBRID": 14,
+    "UNKNOWN_15": 15,
+    "RECURRING_INBOUND_CHANNEL": 17,
+    "INBOUND_CALL_CHANNEL": 18,
+    "CNAM_DIP": 19,
+    "CARRIER_LOOKUP": 20,
+    "OUTBOUND_CALL_SPOOFED": 21,
+    "INBOUND_CALL_CHANNEL_OVERAGE": 22,
+    "RECURRING_DID_UNBLOCK": 23,
+    "INBOUND_CALL_UNBLOCKED": 24,
+    "INBOUND_CALL_FORWARDED_FROM": 25,
+    "UNKNOWN_26": 26,
+    "INBOUND_CLIENT": 28,
+    "OUTBOUND_CLIENT": 29,
+    "UNKNOWN_34": 34,
+    "UNKNOWN_36": 36,
+    "UNKNOWN_39": 39,
+    "UNKNOWN_40": 40,
+};
+
+let Product_pre_reverse = {
+};
+
+for (var name in Product_pre) { 
+    Product_pre_reverse[Product_pre[name]] = name;
+}
+
 /**
  * @readonly
  * @enum {string} Product
@@ -57,5 +97,13 @@ const reverseMap = {
 Product.forValue = function(value) {
     return reverseMap[value];
 };
+
+Product.getProductSignature = function(num) {
+    return Product_pre_reverse[Number(num)] || ('?'+num);
+};
+
+Product.getRawDictionary = function() {
+    return Product_pre;
+}
 
 module.exports = Product;

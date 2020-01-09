@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module zang-node/inboundxml
+ * @module @avaya/cpaas/inboundxml
  */
 
 
@@ -69,97 +69,97 @@ module.exports = {
     },
     /**
      * Creates Conference XML node
-     * @see module:zang-node/inboundxml/conference
+     * @see module:@avaya/cpaas/inboundxml/conference
      */
     conference,
     /**
      * Creates Dial XML node
-     * @see module:zang-node/inboundxml/dial
+     * @see module:@avaya/cpaas/inboundxml/dial
      */
     dial,
     /**
      * Creates Gather XML node
-     * @see module:zang-node/inboundxml/gather
+     * @see module:@avaya/cpaas/inboundxml/gather
      */
     gather,
     /**
      * Creates Gather XML node
-     * @see module:zang-node/inboundxml/gather
+     * @see module:@avaya/cpaas/inboundxml/gather
      */
     getspeech,
     /**
      * Creates Hangup XML node
-     * @see module:zang-node/inboundxml/hangup
+     * @see module:@avaya/cpaas/inboundxml/hangup
      */
     hangup,
     /**
      * Creates Mms XML node
-     * @see module:zang-node/inboundxml/mms
+     * @see module:@avaya/cpaas/inboundxml/mms
      */
     mms,
     /**
      * Creates Number XML node
-     * @see module:zang-node/inboundxml/number
+     * @see module:@avaya/cpaas/inboundxml/number
      */
     number,
     /**
      * Creates Pause XML node
-     * @see module:zang-node/inboundxml/pause
+     * @see module:@avaya/cpaas/inboundxml/pause
      */
     pause,
     /**
      * Creates Ping XML node
-     * @see module:zang-node/inboundxml/ping
+     * @see module:@avaya/cpaas/inboundxml/ping
      */
     ping,
     /**
      * Creates Play XML node
-     * @see module:zang-node/inboundxml/play
+     * @see module:@avaya/cpaas/inboundxml/play
      */
     play,
     /**
      * Creates PlayLastRecording XML node
-     * @see module:zang-node/inboundxml/playlastrecording
+     * @see module:@avaya/cpaas/inboundxml/playlastrecording
      */
     playlastrecording,
     /**
      * Creates Record XML node
-     * @see module:zang-node/inboundxml/record
+     * @see module:@avaya/cpaas/inboundxml/record
      */
     record,
     /**
      * Creates Redirect XML node
-     * @see module:zang-node/inboundxml/redirect
+     * @see module:@avaya/cpaas/inboundxml/redirect
      */
     redirect,
     /**
      * Creates Reject XML node
-     * @see module:zang-node/inboundxml/reject
+     * @see module:@avaya/cpaas/inboundxml/reject
      */
     reject,
     /**
      * Creates Response XML node
-     * @see module:zang-node/inboundxml/response
+     * @see module:@avaya/cpaas/inboundxml/response
      */
     response,
     /**
      * Creates Say XML node
-     * @see module:zang-node/inboundxml/say
+     * @see module:@avaya/cpaas/inboundxml/say
      */
     say,
     /**
      * Creates Sip XML node
-     * @see module:zang-node/inboundxml/sip
+     * @see module:@avaya/cpaas/inboundxml/sip
      */
     sip,
     /**
      * Creates Sms XML node
-     * @see module:zang-node/inboundxml/sms
+     * @see module:@avaya/cpaas/inboundxml/sms
      */
     sms,
     /**
      * Creates User XML node
-     * @see module:zang-node/inboundxml/user
+     * @see module:@avaya/cpaas/inboundxml/user
      */
     user
 };

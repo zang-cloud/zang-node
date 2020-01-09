@@ -3,7 +3,7 @@
 const utils = require('./xml-utils');
 
 /**
- * @module zang-node/inboundxml/getspeech
+ * @module @avaya/cpaas/inboundxml/getspeech
  */
 
 /**

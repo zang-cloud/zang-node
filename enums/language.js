@@ -2,7 +2,7 @@
 const utils = require('./enum-utils');
 
 /**
- * @module zang-node/enums/language
+ * @module @avaya/cpaas/enums/language
  */
 
 /**

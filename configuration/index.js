@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @typedef {Object} ZangConfiguration
+ * @typedef {Object} APIConfiguration
  * @property {string} [baseUrl='https://api.zang.io/v2'] Avaya CPaaS API base URL
  * @property {string} accountSid Your Account SID.
  * @property {string} authToken Your Auth Token.
