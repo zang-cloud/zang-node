@@ -36,7 +36,7 @@ function UsagesConnector(configuration) {
      *                   values are integers between 1 and 31 depending on the month.
      * @param {number} [params.month] Filters usage by month. Allowed values are integers between 1 and 12.
      * @param {number} [params.year] Filters usage by year. Allowed values are valid years in integer form.
-     * @param {Product} params.product Filters usage by a specific Zang product.
+     * @param {Product} params.product Filters usage by a specific Avaya CPaaS product.
      * @param {number} [params.page] Page to return
      * @param {number} [params.pageSize] Number of items to return per page
      * @returns {Promise} A list of Usages.
