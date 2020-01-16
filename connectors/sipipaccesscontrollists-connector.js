@@ -7,7 +7,7 @@ const utils = require('./connector-utils');
 
 /**
  * Creates a new SIP IP Access Control Lists connector.
- * @param {ZangConfiguration} configuration connector configuration parameters
+ * @param {APIConfiguration} configuration connector configuration parameters
  * @constructor
  */
 function SipIpAccessControlListsConnector(configuration) {

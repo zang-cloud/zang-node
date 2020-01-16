@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module zang-node/enums/endcallstatus
+ * @module @avaya/cpaas/enums/endcallstatus
  */
 
 const utils = require('./enum-utils');

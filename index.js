@@ -2,19 +2,19 @@
 
 /**
  * Avaya CPaaS helper APIs for Node.js
- * @module zang-node
+ * @module @avaya/cpaas
  */
 
 /**
  * Contains helper functions used for creating InboundXML documents.
  * @static
- * @see module:zang-node/inboundxml
+ * @see module:@avaya/cpaas/inboundxml
  */
 module.exports.inboundXml = require('./inboundxml');
 /**
  * Contains various enums used when communicating with the Avaya CPaaS API.
  * @static
- * @see module:zang-node/enums
+ * @see module:@avaya/cpaas/enums
  */
 module.exports.enums = require('./enums');
 
@@ -22,7 +22,7 @@ module.exports.enums = require('./enums');
  * Creates a Connectors object which contains all of the specific connectors.
  * @static
  * @type {Connectors}
- * @see module:zang-node/connectors
+ * @see module:@avaya/cpaas/connectors
  */
 module.exports.Connectors = require('./connectors');
 

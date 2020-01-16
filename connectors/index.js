@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @module zang-node/connectors
+ * @module @avaya/cpaas/connectors
  */
 
 const AccountsConnector = require('./accounts-connector');
@@ -25,7 +25,7 @@ const UsagesConnector = require('./usages-connector');
 
 /**
  * Creates a Connector object which contains all of the specific connectors.
- * @param {ZangConfiguration} configuration connector configuration parameters which are passed to all connectors.
+ * @param {APIConfiguration} configuration connector configuration parameters which are passed to all connectors.
  * @constructor
  */
 function Connectors(configuration) {

@@ -7,7 +7,7 @@ const utils = require('./connector-utils');
 
 /**
  * Creates a new Accounts connector.
- * @param {ZangConfiguration} configuration connector configuration parameters
+ * @param {APIConfiguration} configuration connector configuration parameters
  * @constructor
  */
 function AccountsConnector(configuration) {
