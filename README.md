@@ -3,9 +3,9 @@
 
 This Node.js library is an open source tool built to simplify interaction with the [Avaya CPaaS](http://www.zang.io) telephony platform. Avaya CPaaS makes adding voice and SMS to applications fun and easy.
 
-For more information about Avaya CPaaS, please visit: [Avaya OneCloud™️ CPaaS ](https://www.zang.io/products/cloud)
+For more information about Avaya CPaaS, please visit: [Avaya OneCloud™️ CPaaS ](http://avayacloud.com/)
 
-To read the official documentation visit [Avaya CPaaS Docs](http://docs.zang.io/aspx/docs)
+To read the official documentation visit [Avaya CPaaS Docs](https://docs.avayacloud.com/aspx/docs)
 
 ---
 
@@ -22,7 +22,7 @@ Usage
 
 ### REST
 
-See the [Avaya CPaaS REST API documentation](http://docs.zang.io/aspx/rest) for more information.
+See the [Avaya CPaaS REST API documentation](https://docs.avayacloud.com/aspx/rest) for more information.
 
 #### Send SMS Example
 
@@ -103,11 +103,11 @@ var usage = usagesConnector.viewUsage({
 ```
 
 #### Response data
-Visit the [Avaya CPaaS Docs](http://docs.zang.io) page for more information about the returned data.
+Visit the [Avaya CPaaS Docs](https://docs.avayacloud.com/) page for more information about the returned data.
 
 ### InboundXML
 
-InboundXML is an XML dialect which enables you to control phone call flow. For more information please visit the [Avaya CPaaS InboundXML documentation](http://docs.zang.io/aspx/inboundxml).
+InboundXML is an XML dialect which enables you to control phone call flow. For more information please visit the [Avaya CPaaS InboundXML documentation](https://docs.avayacloud.com/aspx/inboundxml).
 
 This library helps you generate InboundXML with a set of functions located under `cpaas.inboundXml`. Valid InboundXML documents have only one \<Response\> element at the root level and the rest of the instructions are contained inside.
 
