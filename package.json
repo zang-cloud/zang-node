@@ -1,9 +1,13 @@
 {
   "name": "@avaya/cpaas",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Node.js helper library for Avaya CPaaS",
   "author": "Avaya Cloud",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zang-cloud/zang-node.git"
+  },
   "scripts": {
     "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- **/*.spec.js -R spec",
     "testl": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- **/*.spec.js -R spec",
