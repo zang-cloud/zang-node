@@ -9,10 +9,12 @@ const xml = require('xml');
 const conference = require('./conference');
 const dial = require('./dial');
 const gather = require('./gather');
+const connect = require('./connect');
 const getspeech = require('./getspeech');
 const hangup = require('./hangup');
 const mms = require('./mms');
 const number = require('./number');
+const agent = require('./agent');
 const pause = require('./pause');
 const ping = require('./ping');
 const play = require('./play');
@@ -161,5 +163,15 @@ module.exports = {
      * Creates User XML node
      * @see module:@avaya/cpaas/inboundxml/user
      */
-    user
+    user,
+    /**
+     * Creates User XML node
+     * @see module:@avaya/cpaas/inboundxml/connect
+     */
+    connect,
+    /**
+     * Creates User XML node
+     * @see module:@avaya/cpaas/inboundxml/agent
+     */
+    agent
 };
