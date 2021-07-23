@@ -308,6 +308,16 @@
             <xsd:attribute name="outboundAction" type="booleans" use="optional"/>
         </xsd:complexType>
     </xsd:element>
+    <xsd:element name="Agent"/>
+    <xsd:element name="Connect">
+        <xsd:complexType mixed="true">
+            <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element ref="Agent"/>
+            </xsd:choice>
+            <xsd:attribute name="action" type="xsd:anyURI" use="optional"/>
+            <xsd:attribute name="method" type="http_methods" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
     <xsd:element name="Gather">
         <xsd:complexType mixed="true">
             <xsd:choice maxOccurs="unbounded" minOccurs="0">
@@ -431,6 +441,7 @@
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Sms"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Mms"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="GetSpeech"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Connect"/>
             </xsd:choice>
             <xsd:attribute name="statusCallback" type="xsd:anyURI" use="optional"/>
             <xsd:attribute name="statusMethod" type="http_methods" use="optional"/>
