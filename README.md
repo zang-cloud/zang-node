@@ -24,6 +24,24 @@ Usage
 
 See the [Avaya CPaaS REST API documentation](https://docs.avayacloud.com/aspx/rest) for more information.
 
+Normally you'll want to just set your Avaya CPaaS Platform *AccountSid* and *AuthToken* in config object. But you can also change the base API URL. The default value of base API URL is "https://api.zang.io/v2".
+
+The base API URL and api versions for US(new) and EU deployments are:
+US: https://api-us.cpaas.avayacloud.com/v2/
+EU: https://api-eu.cpaas.avayacloud.com/v2/
+
+##### Set Base URL and API Version Example
+
+To change base url to EU deployment
+
+```javascript
+    const defaultConfiguration = {
+        accountSid: {AccountSid},
+        authToken: {AuthToken},
+        baseUrl: 'https://api-eu.cpaas.avayacloud.com/v2'
+    };
+```
+
 #### Send SMS Example
 
 ```javascript
