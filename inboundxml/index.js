@@ -27,7 +27,7 @@ const say = require('./say');
 const sip = require('./sip');
 const sms = require('./sms');
 const user = require('./user');
-
+const refer = require('./refer');
 
 let schema = null;
 let xsd = null;
@@ -79,6 +79,11 @@ module.exports = {
      * @see module:@avaya/cpaas/inboundxml/dial
      */
     dial,
+    /**
+     * Creates Dial XML node
+     * @see module:@avaya/cpaas/inboundxml/refer
+     */
+    refer,
     /**
      * Creates Gather XML node
      * @see module:@avaya/cpaas/inboundxml/gather

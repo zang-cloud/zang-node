@@ -308,6 +308,18 @@
             <xsd:attribute name="outboundAction" type="booleans" use="optional"/>
         </xsd:complexType>
     </xsd:element>
+    <xsd:element name="Refer">
+        <xsd:complexType mixed="true">
+            <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element ref="Sip"/>
+            </xsd:choice>
+            <xsd:attribute name="action" type="xsd:anyURI" use="optional"/>
+            <xsd:attribute name="method" type="http_methods" use="optional"/>
+            <xsd:attribute name="timeout" type="positive_integer" use="optional"/>
+            <xsd:attribute name="callbackUrl" type="xsd:anyURI" use="optional"/>
+            <xsd:attribute name="callbackMethod" type="http_methods" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
     <xsd:element name="Agent"/>
     <xsd:element name="Connect">
         <xsd:complexType mixed="true">
@@ -433,6 +445,7 @@
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Gather"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Record"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Dial"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Refer"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Hangup"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Redirect"/>
                 <xsd:element maxOccurs="unbounded" minOccurs="0" ref="Ping"/>
