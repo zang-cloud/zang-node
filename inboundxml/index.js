@@ -80,7 +80,7 @@ module.exports = {
      */
     dial,
     /**
-     * Creates Dial XML node
+     * Creates Refer XML node
      * @see module:@avaya/cpaas/inboundxml/refer
      */
     refer,
