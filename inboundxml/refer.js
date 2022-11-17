@@ -9,7 +9,7 @@ const utils = require('./xml-utils');
 /**
  * Creates a Refer element.
  * @param {Object} params XML Node parameters.
- * @param {Object[]} [params.content] Specify child elements of the Dial element. Allowed elements are: Conference, Number, Sip
+ * @param {Object[]} [params.content] Specify child elements of the Refer element. Allowed elements are: Sip
  * @param {string} [params.action] URL where some parameters specific to <Refer> will be sent for further processing.
  * @param {HttpMethod} [params.method=POST] Method used to request the action URL.
  * @param {number} [params.timeout] The number of seconds CPaaS should wait for <Refer> verb to conclude.
