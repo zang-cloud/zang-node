@@ -97,6 +97,20 @@ describe('SimpleInboundXmlTest', function () {
                             })
                         ]
                     }),
+                    ix.refer({
+                        action: 'action',
+                        method: enums.HttpMethod.GET,
+                        timeout: 180,
+                        callbackUrl: 'callback',
+                        callbackMethod: enums.HttpMethod.GET,
+                        content: [
+                            ix.sip({
+                                password: 'pass',
+                                sipAddress: 'username@example.com',
+                                username: 'username'
+                            })
+                        ]
+                    }),
                     ix.hangup({
                         reason: enums.RejectReason.BUSY,
                         schedule: 12
@@ -187,6 +201,29 @@ describe('SimpleInboundXmlTest', function () {
                         content: [
                             ix.agent({
                                 agentId: '1234'
+                            })
+                        ]
+                    })
+                ]
+            });
+            ix.build(xmlDefinition).then(xml => console.log(xml));
+        })
+    });
+    describe('GenerateReferXml', function () {
+        it('should return xml with Refer verb', function () {
+            let xmlDefinition = ix.response({
+                content: [
+                    ix.refer({
+                        action: 'https://example.com/actionURL',
+                        method: enums.HttpMethod.POST,
+                        timeout: 180,
+                        callbackUrl: 'https://example.com/callbackURL',
+                        callbackMethod: enums.HttpMethod.POST,
+                        content: [
+                            ix.sip({
+                                password: 'pass',
+                                sipAddress: 'username@example.com',
+                                username: 'username'
                             })
                         ]
                     })
